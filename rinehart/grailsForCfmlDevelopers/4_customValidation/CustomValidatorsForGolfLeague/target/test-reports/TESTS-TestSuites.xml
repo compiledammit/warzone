@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="0" hostname="unweight.local" id="0" name="TeamTests" package="customvalidatorsforgolfleague" tests="1" time="0.81" timestamp="2012-08-12T15:56:31">
+      <properties />
+
+      <testcase classname="customvalidatorsforgolfleague.TeamTests" name="testMaxGolfersPerTeamIsEnforced" time="0.783">
+          <error message="No signature of method: customvalidatorsforgolfleague.League.list() is applicable for argument types: () values: []&#xa;Possible solutions: list(), list(java.util.Map), is(java.lang.Object), wait(), lock(), find()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: customvalidatorsforgolfleague.League.list() is applicable for argument types: () values: []
+Possible solutions: list(), list(java.util.Map), is(java.lang.Object), wait(), lock(), find()
+	at customvalidatorsforgolfleague.TeamTests.testMaxGolfersPerTeamIsEnforced(TeamTests.groovy:15)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testMaxGolfersPerTeamIsEnforced--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testMaxGolfersPerTeamIsEnforced--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

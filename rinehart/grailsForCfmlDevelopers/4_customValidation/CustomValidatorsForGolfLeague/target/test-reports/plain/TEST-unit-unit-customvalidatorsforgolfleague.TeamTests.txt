@@ -1,0 +1,17 @@
+Testsuite: customvalidatorsforgolfleague.TeamTests
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.81 sec
+------------- Standard Output ---------------
+--Output from testMaxGolfersPerTeamIsEnforced--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testMaxGolfersPerTeamIsEnforced--
+------------- ---------------- ---------------
+
+Testcase: testMaxGolfersPerTeamIsEnforced took 0.767 sec
+	Caused an ERROR
+No signature of method: customvalidatorsforgolfleague.League.list() is applicable for argument types: () values: []
+Possible solutions: list(), list(java.util.Map), is(java.lang.Object), wait(), lock(), find()
+groovy.lang.MissingMethodException: No signature of method: customvalidatorsforgolfleague.League.list() is applicable for argument types: () values: []
+Possible solutions: list(), list(java.util.Map), is(java.lang.Object), wait(), lock(), find()
+	at customvalidatorsforgolfleague.TeamTests.testMaxGolfersPerTeamIsEnforced(TeamTests.groovy:15)
+
