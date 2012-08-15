@@ -2,9 +2,8 @@ package genericservice
 
 class BaconController {
 
-    boolean byName = false  //does not work if baconService is renamed "service"
-
-    BaconService service
+    def service
+    def setBaconService( BaconService bs ){ service = bs }
 
 
     def index() {
@@ -13,9 +12,7 @@ class BaconController {
 
     def save(){
         def b = Bacon.get(params.id)
-        params.fatPercent = Math.random()
-        params.saltPercent = Math.random()
-        bindData(b, params)
+         bindData(b, [fatPercent : Math.random(), saltPercent : Math.random()])
         service.save(b)
         redirect( action:  "index" )
     }

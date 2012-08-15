@@ -3,8 +3,8 @@
 *.ipr
 *.iws
 *.log
-out/*
-target/*
-target-eclipse/*
+*/out/*
+*/target/*
+*/target-eclipse/*
 .settings/*
 atlassian-ide-plugin.xml
