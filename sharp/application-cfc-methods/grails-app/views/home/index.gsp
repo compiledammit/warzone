@@ -104,7 +104,7 @@
 		</div>
 		<div id="page-body" role="main">
 			<h1>Welcome to Grails</h1>
-            <h2>${varFromServletContext}</h2>
+
 			<p>Congratulations, you have successfully started your first Grails application! At the moment
 			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
 			   content you may choose. Below is a list of controllers that are currently deployed in this application,
@@ -118,6 +118,10 @@
 					</g:each>
 				</ul>
 			</div>
+
+            <h2>From Servlet Context: ${varFromServletContext}</h2>
+            <h2>From Config: ${varFromConfig}</h2>
+
 		</div>
 	</body>
 </html>

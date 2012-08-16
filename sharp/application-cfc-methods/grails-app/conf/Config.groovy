@@ -69,6 +69,10 @@ environments {
     }
 }
 
+compiledammit.test = 'Hello from Config.groovy!'
+compiledammit.map = [key:'value']
+compiledammit.array = [1,2,3]
+
 // log4j configuration
 log4j = {
     // Example of changing the log pattern for the default console appender:

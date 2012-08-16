@@ -1,10 +1,5 @@
 package com.sharp.agg.feed
 
-import org.springframework.dao.DataIntegrityViolationException
-import org.springframework.dao.OptimisticLockingFailureException
-
-import javax.xml.bind.ValidationException
-import javax.annotation.PostConstruct
 import com.sharp.agg.BaseService
 
 class FeedService extends BaseService {
