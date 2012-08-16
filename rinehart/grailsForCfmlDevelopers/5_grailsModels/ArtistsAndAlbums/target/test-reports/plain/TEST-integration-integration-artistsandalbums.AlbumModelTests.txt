@@ -1,0 +1,17 @@
+Testsuite: artistsandalbums.AlbumModelTests
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.297 sec
+------------- Standard Output ---------------
+--Output from our_relationships_work--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from our_relationships_work--
+------------- ---------------- ---------------
+
+Testcase: our_relationships_work took 0.282 sec
+	Caused an ERROR
+No such property: album for class: artistsandalbums.Song
+Possible solutions: all
+groovy.lang.MissingPropertyException: No such property: album for class: artistsandalbums.Song
+Possible solutions: all
+	at artistsandalbums.AlbumModelTests.our_relationships_work(AlbumModelTests.groovy:17)
+
