@@ -1,0 +1,16 @@
+*.project
+*.classpath
+*.idea
+*.iml
+*.iml
+*.settings
+classes/*
+target/*
+target-eclipse/*
+*.log
+log/*
+*.iml
+out/*
+*.ipr
+*.iws
+.idea/*

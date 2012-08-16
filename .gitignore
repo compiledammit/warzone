@@ -1,0 +1,10 @@
+.idea/*
+*.iml
+*.ipr
+*.iws
+*.log
+*/out/*
+*/target/*
+*/target-eclipse/*
+.settings/*
+atlassian-ide-plugin.xml
