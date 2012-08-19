@@ -3,15 +3,15 @@
 Ext.define('ExtCoffeeTodo.view.TodoPanel', {
   extend: 'Ext.grid.Panel',
   alias: 'widget.extcoffeetodo-view-todoPanel',
-  requires: 'Ext.ux.CheckColumn',
+  requires: ['Ext.ux.CheckColumn', 'ExtCoffeeTodo.store.TodoStore'],
   inject: ['todoStore'],
   controller: 'ExtCoffeeTodo.controller.TodoController',
   layout: 'anchor',
+  title: "ExtJS and CoffeeScript Todo List",
   cellEditing: Ext.create('Ext.grid.plugin.CellEditing', {
     clicksToEdit: 1
   }),
   initComponent: function() {
-    var _this = this;
     Ext.applyIf(this, {
       store: this.todoStore,
       emptyText: "There are no Todos yet.",
@@ -19,27 +19,25 @@ Ext.define('ExtCoffeeTodo.view.TodoPanel', {
         {
           header: "Todo Description",
           dataIndex: "description",
-          flex: 2,
+          flex: 1,
           editor: {
+            emptyText: "Enter Todo Description",
             allowBlank: false
           }
         }, {
+          text: 'Created',
+          dataIndex: 'dateCreated',
+          xtype: 'datecolumn',
+          format: 'm-d-Y g:i A',
+          width: 150
+        }, {
           xtype: "checkcolumn",
+          itemId: "completeColumn",
           header: "Complete",
           dataIndex: "complete",
-          stopSelection: false,
-          listeners: {
-            checkchange: function(column, rowIndex, checked, opts) {
-              return _this.todoStore.sync();
-            }
-          }
+          width: 80
         }
       ],
-      listeners: {
-        edit: function(editor, event) {
-          return _this.todoStore.sync();
-        }
-      },
       selModel: {
         selType: "cellmodel"
       },
@@ -47,28 +45,13 @@ Ext.define('ExtCoffeeTodo.view.TodoPanel', {
       tbar: [
         {
           text: "Add Todo",
-          handler: function() {
-            var newTodo;
-            newTodo = Ext.create("ExtCoffeeTodo.model.Todo", {
-              description: "New Todo",
-              complete: false
-            });
-            _this.todoStore.insert(0, newTodo);
-            return _this.cellEditing.startEditByPosition({
-              row: 0,
-              column: 0
-            });
-          }
+          itemId: "addButton",
+          iconCls: "add-icon"
         }, '->', {
           xtype: "checkbox",
+          itemId: "showCompletedCheckbox",
           boxLabel: "Show Completed?",
-          boxLabelCls: "toolbar-box-label",
-          margin: "0 10 10 0",
-          listeners: {
-            change: function(field, value) {
-              return _this.todoStore.showCompleted(value);
-            }
-          }
+          boxLabelCls: "toolbar-box-label"
         }
       ],
       plugins: [this.cellEditing]

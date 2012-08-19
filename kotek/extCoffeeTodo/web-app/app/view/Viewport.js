@@ -3,8 +3,6 @@
 Ext.define("ExtCoffeeTodo.view.Viewport", {
   extend: "Ext.container.Viewport",
   requires: ["ExtCoffeeTodo.view.TodoPanel"],
-  renderTo: Ext.getBody(),
-  layout: "fit",
   initComponent: function() {
     Ext.applyIf(this, {
       items: [

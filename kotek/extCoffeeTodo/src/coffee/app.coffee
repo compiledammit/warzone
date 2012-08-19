@@ -10,7 +10,11 @@ Ext.application
   name: "ExtCoffeeTodo"
 
 
+Ext.require 'ExtCoffeeTodo.store.TodoStore'
+
+
 Ext.onReady ->
 
+	#Configure IoC
   Deft.Injector.configure
     todoStore: "ExtCoffeeTodo.store.TodoStore"

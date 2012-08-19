@@ -3,40 +3,38 @@
 Ext.define('ExtCoffeeTodo.store.TodoStore', {
   extend: 'Ext.data.Store',
   requires: ['ExtCoffeeTodo.model.Todo'],
-  constructor: function(cfg) {
-    cfg = cfg || {};
-    return this.callParent([
-      Ext.apply({
-        autoLoad: true,
-        model: 'ExtCoffeeTodo.model.Todo',
-        proxy: {
-          type: 'ajax',
-          api: {
-            create: 'todo/ajaxCreate',
-            read: 'todo/ajaxList',
-            update: 'todo/ajaxSave'
-          },
+  constructor: function() {
+    var config;
+    config = {
+      autoLoad: true,
+      model: 'ExtCoffeeTodo.model.Todo',
+      proxy: {
+        type: 'ajax',
+        api: {
+          create: 'todo/ajaxCreate',
+          read: 'todo/ajaxList',
+          update: 'todo/ajaxSave',
           reader: {
             type: 'json'
           }
-        },
-        sorters: [
-          {
-            property: 'dateCreated',
-            direction: 'DESC'
-          }
-        ],
-        filters: [this.completedFilter]
-      }, cfg)
-    ]);
+        }
+      },
+      sorters: [
+        {
+          property: 'dateCreated',
+          direction: 'DESC'
+        }
+      ],
+      filters: [this.completedFilter]
+    };
+    return this.callParent([config]);
   },
   onUpdateRecords: function() {
-    this.callParent(arguments);
     return this.filterBy(this.completedFilter);
   },
   onCreateRecords: function() {
-    this.callParent(arguments);
-    return this.filterBy(this.completedFilter);
+    this.filterBy(this.completedFilter);
+    return this.resort();
   },
   _showCompleted: false,
   showCompleted: function(flag) {
@@ -52,5 +50,11 @@ Ext.define('ExtCoffeeTodo.store.TodoStore', {
     } else {
       return !record.get('complete');
     }
+  },
+  resort: function() {
+    return this.sort({
+      property: this.sorters.get(0).property,
+      direction: this.sorters.get(0).direction
+    });
   }
 });

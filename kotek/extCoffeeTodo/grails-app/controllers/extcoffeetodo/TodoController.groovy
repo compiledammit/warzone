@@ -7,14 +7,13 @@ class TodoController {
 	static allowedMethods = [ajaxList: "GET", ajaxSave: "POST", ajaxComplete: "POST"]
 
 	def ajaxList() {
-		render Todo.findAll( "from Todo t order by t.dateCreated asc" ) as JSON
+		render Todo.findAll( "from Todo t order by t.dateCreated desc" ) as JSON
 	}
 
 	def ajaxCreate() {
-		def temp = request
 		def todo = new Todo(
 				description : request.JSON.description,
-				complete : false
+				complete : request.JSON.complete
 		).save( failOnError : true )
 
 		render todo as JSON

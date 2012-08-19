@@ -2,8 +2,44 @@
 
 Ext.define('ExtCoffeeTodo.controller.TodoController', {
   extend: 'Deft.mvc.ViewController',
+  requires: ['ExtCoffeeTodo.store.TodoStore'],
   inject: ['todoStore'],
+  control: {
+    showCompletedCheckbox: {
+      change: "toggleShowCompleted"
+    },
+    completeColumn: {
+      checkchange: "syncTodoStore"
+    },
+    view: {
+      edit: "syncTodoStore"
+    },
+    addButton: {
+      click: "addNewTodo"
+    }
+  },
+  config: {
+    todoStore: null
+  },
   init: function() {
     return this.callParent(arguments);
+  },
+  addNewTodo: function() {
+    var newTodo;
+    newTodo = Ext.create("ExtCoffeeTodo.model.Todo", {
+      complete: false
+    });
+    this.getTodoStore().insert(0, newTodo);
+    return this.getView().cellEditing.startEditByPosition({
+      row: 0,
+      column: 0
+    });
+  },
+  toggleShowCompleted: function(field, value) {
+    return this.getTodoStore().showCompleted(value);
+  },
+  syncTodoStore: function() {
+    this.getTodoStore().sync();
+    return this.getView().getSelectionModel().deselectAll();
   }
 });

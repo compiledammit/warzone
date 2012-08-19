@@ -1,5 +1,8 @@
-Ext.define "ExtCoffeeTodo.model.Todo",
+Ext.define( "ExtCoffeeTodo.model.Todo",
 	extend: "Ext.data.Model"
+
+	# Models can encapsulate business logic,
+	# handle data conversion, etc.
 	fields: [
 		name: "id"
 	,
@@ -11,9 +14,9 @@ Ext.define "ExtCoffeeTodo.model.Todo",
 	,
 		name: "dateCreated"
 		type: "date"
-		#dateFormat: "timestamp"
 	,
 		name: "lastUpdated"
 		type: "date"
-		#dateFormat: "timestamp"
 	]
+
+)
