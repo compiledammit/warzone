@@ -8,3 +8,5 @@
 */target-eclipse/*
 .settings/*
 atlassian-ide-plugin.xml
+target/
+target-eclipse/
