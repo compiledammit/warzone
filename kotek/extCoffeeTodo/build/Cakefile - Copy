@@ -1,0 +1,106 @@
+fs     = require 'fs'
+path   = require 'path'
+{exec} = require 'child_process'
+
+# Make sure we have our dependencies
+try
+  colors = require 'colors'
+catch error
+  console.error 'Please run `npm install colors` first'
+  process.exit 1
+
+# Setup directory paths  
+sourceDir = '../coffee'
+outputDir = '../app'
+deployDir = ''
+testSourceDir = '../test/coffee'
+testOutputDir = '../test/js'
+testDeployDir = ''
+
+
+task 'watch', 'Automatically recompile CoffeeScript files to JavaScript', ->
+  console.log "Watching coffee files for changes, press Control-C to quit".yellow
+  srcWatcher  = exec "coffee --compile --bare --watch --output #{outputDir} #{sourceDir}"
+  srcWatcher.stderr.on 'data', (data) -> console.error stripEndline(data).red.bold
+  srcWatcher.stdout.on 'data', (data) ->
+    # Hacky way to find if something compiled successfully
+    if /compiled/.test data
+      process.stdout.write data.green
+    else
+      process.stderr.write data.red.bold
+      filenameMatch = data.match /^In (.*)\.coffee/
+
+      if filenameMatch and filenameMatch[1]
+        # Add warning into code since watch window is in bg
+        # insertJsError filenameMatch[1], "CoffeeScript compilation error: #{data}"
+        true
+
+
+task 'watch_deploy', 'Automatically recompile CoffeeScript files to JavaScript and Deploy', ->
+  console.log "Watching coffee files for changes and deploying, press Control-C to quit".yellow
+  srcDeployer  = exec "coffee --compile --bare --watch --output #{deployDir} #{sourceDir}"
+  srcWatcher  = exec "coffee --compile --bare --watch --output #{outputDir} #{sourceDir}"
+  srcWatcher.stderr.on 'data', (data) -> console.error stripEndline(data).red.bold
+
+  srcWatcher.stdout.on 'data', (data) ->
+    # Hacky way to find if something compiled successfully
+    if /compiled/.test data
+      process.stdout.write data.green
+    else
+      process.stderr.write data.red.bold
+      filenameMatch = data.match /^In (.*)\.coffee/
+
+      if filenameMatch and filenameMatch[1]
+        # Add warning into code since watch window is in bg
+        # insertJsError filenameMatch[1], "CoffeeScript compilation error: #{data}"
+        true
+
+task 'watch_tests', 'Automatically recompile CoffeeScript test files to JavaScript', ->
+  console.log "Watching coffee files for changes, press Control-C to quit".yellow
+  srcWatcher  = exec "coffee --compile --bare --watch --output #{testOutputDir} #{testSourceDir}"
+  srcWatcher.stderr.on 'data', (data) -> console.error stripEndline(data).red.bold
+  srcWatcher.stdout.on 'data', (data) ->
+    # Hacky way to find if something compiled successfully
+    if /compiled/.test data
+      process.stdout.write data.green
+    else
+      process.stderr.write data.red.bold
+      filenameMatch = data.match /^In (.*)\.coffee/
+
+
+task 'watch_tests_deploy', 'Automatically recompile CoffeeScript test files to JavaScript and Deploy', ->
+  console.log "Watching coffee files for changes, press Control-C to quit".yellow
+  srcDeployer  = exec "coffee --compile --bare --watch --output #{testDeployDir} #{testSourceDir}"
+  srcWatcher  = exec "coffee --compile --bare --watch --output #{testOutputDir} #{testSourceDir}"
+  srcWatcher.stderr.on 'data', (data) -> console.error stripEndline(data).red.bold
+  srcWatcher.stdout.on 'data', (data) ->
+    # Hacky way to find if something compiled successfully
+    if /compiled/.test data
+      process.stdout.write data.green
+    else
+      process.stderr.write data.red.bold
+      filenameMatch = data.match /^In (.*)\.coffee/
+
+
+# Helper for stripping trailing endline when outputting
+stripEndline = (str) ->
+  return str.slice(0, str.length - 1) if str[str.length - 1] is "\n"
+  return str
+
+
+# Helper for inserting error text into a given file
+insertJsError = (filename, js) ->
+  jsFile = fs.openSync((path.join paths.libDir, "#{filename}.js"), 'w')
+  fs.writeSync jsFile, '#' + js
+  fs.closeSync jsFile
+
+
+stdOutStreamer = (filter) ->
+  (str) ->
+    str = filter str if filter
+    process.stderr.write str
+
+stdErrorStreamer = (filter) ->
+  (str) ->
+    str = filter str if filter
+    process.stderr.write str.red

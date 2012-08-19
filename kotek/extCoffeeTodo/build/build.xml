@@ -1,0 +1,75 @@
+<project name="Ext Examples Build/Deploy" default="watch" basedir=".">
+
+    <property name="src" location="../src/main/webapp"/>
+    <property name="test" location="../src/test/spec"/>
+    <property name="dist" location="../../../../deployment/owf-tomcat/webapps/geoloc-approval-widget"/>
+
+    <target name="watch" description="Launch CoffeeScript directory watcher">
+        <exec executable="cmd">
+            <arg value="coffeescript directory watcher.bat"/>
+        </exec>
+    </target>
+
+    <!--
+    <target name="deploy" description="Deploy app">
+
+        <copy todir="${dist}/app">
+            <fileset dir="${src}/app"/>
+        </copy>
+        <copy file="${src}/approval.html" todir="${dist}" />
+        <copy file="${src}/approval.jsp" todir="${dist}" />
+        <copy file="${src}/submission.html" todir="${dist}" />
+        <echo>Deployed /app and index.html to: ${dist}</echo>
+
+    </target>
+
+
+    <target name="deployall" description="Deploy app, libs, resources, config, and data" depends="deploy">
+
+        <copy todir="${dist}/config" failonerror="false">
+            <fileset dir="${src}/config"/>
+        </copy>
+        <copy todir="${dist}/data" failonerror="false">
+            <fileset dir="${src}/data"/>
+        </copy>
+        <copy todir="${dist}/resources" failonerror="false">
+            <fileset dir="${src}/resources"/>
+        </copy>
+        <copy todir="${dist}/libs" failonerror="false">
+            <fileset dir="${src}/libs"/>
+        </copy>
+        <echo>Deployed /app, /data, /resources, /libs, and index.html to: ${dist}</echo>
+
+        <copy todir="${dist}/test/lib" failonerror="false">
+            <fileset dir="${test}/lib"/>
+        </copy>
+        <copy todir="${dist}/test/js" failonerror="false">
+            <fileset dir="${test}/js"/>
+        </copy>
+        <copy todir="${dist}/test/data" failonerror="false">
+            <fileset dir="${test}/data"/>
+        </copy>
+        <copy file="${test}/approval-tests.html" todir="${dist}/test" />
+        <echo>Deployed /lib, /spec, /data, and test runner to: ${dist}/test</echo>
+
+    </target>
+
+
+    <target name="clean" description="Clean target folders">
+        <delete dir="${dist}/app"/>
+        <delete dir="${dist}/data"/>
+        <delete dir="${dist}/resources"/>
+        <delete dir="${dist}/libs"/>
+        <delete dir="${dist}/config"/>
+
+        <mkdir dir="${dist}/app"/>
+        <mkdir dir="${dist}/data"/>
+        <mkdir dir="${dist}/resources"/>
+        <mkdir dir="${dist}/libs"/>
+        <mkdir dir="${dist}/config"/>
+
+        <echo>Cleaned ${dist}</echo>
+    </target>
+    -->
+
+</project>
