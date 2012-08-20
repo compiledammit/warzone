@@ -21,5 +21,5 @@ The repository has all compiled JavaScript committed under /web-app/app. However
     * Program: $ProjectFileDir$\build\coffeescript parameterized watcher.bat
     * Parameters: ../src/coffee ../web-app/app
     * Working directory: $ProjectFileDir$\build
-* To run the Cakefile manually, go to the folder in a console window and run "cake -s ../src/coffee -o ../web-app/app watchany"
+* To run the Cakefile manually, go to the \build directory in a console window and run "cake -s ../src/coffee -o ../web-app/app watchany"
 
