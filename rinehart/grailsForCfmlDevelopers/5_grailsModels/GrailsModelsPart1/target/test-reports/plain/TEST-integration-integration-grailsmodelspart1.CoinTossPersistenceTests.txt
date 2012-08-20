@@ -1,0 +1,13 @@
+Testsuite: grailsmodelspart1.CoinTossPersistenceTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.531 sec
+------------- Standard Output ---------------
+--Output from we_can_crud_coin_tosses--
+--Output from we_can_run_the_heads_or_tails_report--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from we_can_crud_coin_tosses--
+--Output from we_can_run_the_heads_or_tails_report--
+------------- ---------------- ---------------
+
+Testcase: we_can_crud_coin_tosses took 0.491 sec
+Testcase: we_can_run_the_heads_or_tails_report took 0.028 sec

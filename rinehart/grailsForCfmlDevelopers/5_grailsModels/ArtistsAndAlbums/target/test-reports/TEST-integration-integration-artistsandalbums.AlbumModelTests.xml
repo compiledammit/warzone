@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="unweight.local" name="artistsandalbums.AlbumModelTests" tests="1" time="0.297" timestamp="2012-08-15T23:15:08">
+  <properties />
+  <testcase classname="artistsandalbums.AlbumModelTests" name="our_relationships_work" time="0.286">
+    <error message="No such property: album for class: artistsandalbums.Song&#xa;Possible solutions: all" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: album for class: artistsandalbums.Song
+Possible solutions: all
+	at artistsandalbums.AlbumModelTests.our_relationships_work(AlbumModelTests.groovy:17)
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from our_relationships_work--
+]]></system-out>
+  <system-err><![CDATA[--Output from our_relationships_work--
+]]></system-err>
+</testsuite>
