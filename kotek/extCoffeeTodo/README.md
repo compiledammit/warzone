@@ -1,6 +1,6 @@
 # ExtJS-DeftJS-CoffeeScript-Grails Todo Application
 
-# About
+## About
 
 Simple Todo app that demonstrates using ExtJS, DeftJS, and CoffeeScript as the front-end for a Grails application.
 
@@ -9,7 +9,7 @@ Simple Todo app that demonstrates using ExtJS, DeftJS, and CoffeeScript as the f
 * http://deftjs.org/
 * http://coffeescript.org/
 
-# Building the CoffeeScript
+## Building the CoffeeScript
 
 The repository has all compiled JavaScript committed under /web-app/app. However, if you wish to modify and compile the .coffee files:
 
