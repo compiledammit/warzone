@@ -4,17 +4,6 @@ class BootStrap {
 
     def init = { servletContext ->
         log.info('This is the init() method of grails-app/conf/BootStrap.groovy.  Think of it like onApplicationStart().')
-
-        // set an "application" variable
-        servletContext.setAttribute('appVar', 'Hello from the servlet context!')
-
-        log.info(grailsApplication.config.compiledammit)
-
-        // read "global" vars from Config.groovy
-        def test = grailsApplication.config.compiledammit.test
-        def arr = grailsApplication.config.compiledammit.array
-        def map = grailsApplication.config.compiledammit.map
-        def foo = true
     }
     def destroy = {
         /*

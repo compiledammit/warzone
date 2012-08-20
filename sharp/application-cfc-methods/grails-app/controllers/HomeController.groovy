@@ -1,12 +1,12 @@
+import com.compiledammit.SingletonExampleService
+
 class HomeController {
 
-    def grailsApplication
+    SingletonExampleService singletonExampleService
 
     def index() {
-        [
-            varFromServletContext: servletContext.getAttribute('appVar'),
-            varFromConfig: grailsApplication.config.compiledammit.test
-        ]
+        singletonExampleService.pageHits++
+        [pageHits: singletonExampleService.pageHits, sessionInit: singletonExampleService.sessionInit]
     }
 
 }

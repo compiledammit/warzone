@@ -118,10 +118,12 @@
 					</g:each>
 				</ul>
 			</div>
-
-            <h2>From Servlet Context: ${varFromServletContext}</h2>
-            <h2>From Config: ${varFromConfig}</h2>
-
-		</div>
+            <p>
+                Page Hits:  ${pageHits}
+            </p>
+            <p>
+                Session Init?  ${sessionInit}
+            </p>
+        </div>
 	</body>
 </html>
