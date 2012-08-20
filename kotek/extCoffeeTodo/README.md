@@ -4,6 +4,7 @@
 
 Simple Todo app that demonstrates using ExtJS, DeftJS, and CoffeeScript as the front-end for a Grails application.
 
+* http://compiledammit.com/2012/08/20/simple-grails-extjs-coffeescript-example
 * http://grails.org/
 * http://www.sencha.com/products/extjs/
 * http://deftjs.org/
