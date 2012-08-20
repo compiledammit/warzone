@@ -22,4 +22,4 @@ The repository has all compiled JavaScript committed under /web-app/app. However
     * Parameters: ../src/coffee ../web-app/app
     * Working directory: $ProjectFileDir$\build
 * To run the Cakefile manually, go to the \build directory in a console window and run "cake -s ../src/coffee -o ../web-app/app watchany"
-
+* If someone on OSX or *nix creates a shell script to mimic the functionality of the Windows batch file, feel free to send me a pull request and I'll add it.
