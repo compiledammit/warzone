@@ -2,7 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9697917-a8bd-4012-879a-19b7779b1556" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\558848\Documents\Projects\grails-test-bed\sharp\application-cfc-methods\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\558848\Documents\Projects\grails-test-bed\sharp\application-cfc-methods\target\classes\Config$_run_closure1_closure5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\558848\Documents\Projects\grails-test-bed\sharp\application-cfc-methods\target\classes\Config$_run_closure3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\558848\Documents\Projects\grails-test-bed\sharp\application-cfc-methods\target\classes\application\cfc\methods\HomeController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/JQueryResourceTagLib.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/JQueryResourceTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/JQueryService.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/JQueryService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/JQueryTagLib.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/JQueryTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/CacheTagLib.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/CacheTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/ConfigBuilder.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/ConfigBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/ConfigLoader.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/ConfigLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/GrailsCacheAdminService.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/cache/GrailsCacheAdminService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/ChangelogXml2Groovy.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/ChangelogXml2Groovy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/DbdocController.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/DbdocController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/DslBuilder.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/DslBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GormDatabase.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GormDatabase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GormDatabaseTypeConverter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsChange$1.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsChange$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsChange.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsChange.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsChangeLogParser.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsChangeLogParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsDiffStatusListener.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsDiffStatusListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsPrecondition$1.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsPrecondition$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsPrecondition.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GrailsPrecondition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/Log4jLogger.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/Log4jLogger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/MigrationRunner.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/MigrationRunner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/MigrationUtils.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/MigrationUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/ScriptUtils.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/ScriptUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/AuthorListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/AuthorWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/ColumnWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/HTMLListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/HTMLWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableListWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableListWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableWriter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/databasemigration/dbdoc/TableWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/webxml/FilterManager.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/grails/plugin/webxml/FilterManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/AggregatedResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/CSSBundleResourceMeta.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/CSSBundleResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/CSSLinkProcessor.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/CSSLinkProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/DevModeSanityFilter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/DevModeSanityFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/JavaScriptBundleResourceMeta.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/JavaScriptBundleResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ProcessingFilter.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ProcessingFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceMeta.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceMeta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceModule.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceProcessor.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceProcessorBatch.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceProcessorBatch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceTagLib.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/ResourceTagLib.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/URLUtils.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/URLUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/mapper/MapperPhase.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/mapper/MapperPhase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/mapper/ResourceMappersFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/module/ModuleBuilder.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/module/ModuleBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/module/ModuleDeclarationsFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/module/ModulesBuilder.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/module/ModulesBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/util/HalfBakedLegacyLinkGenerator.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/util/HalfBakedLegacyLinkGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/util/ResourceMetaStore.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods-grailsPlugins/org/grails/plugin/resource/util/ResourceMetaStore.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/application-cfc-methods/HomeController.class" afterPath="$PROJECT_DIR$/out/production/application-cfc-methods/HomeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ApplicationResources.class" afterPath="$PROJECT_DIR$/target/classes/ApplicationResources.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BootStrap.class" afterPath="$PROJECT_DIR$/target/classes/BootStrap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/BuildConfig.class" afterPath="$PROJECT_DIR$/target/classes/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" afterPath="$PROJECT_DIR$/target/classes/Config$_run_closure2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Config.class" afterPath="$PROJECT_DIR$/target/classes/Config.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataSource.class" afterPath="$PROJECT_DIR$/target/classes/DataSource.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/HomeController.class" afterPath="$PROJECT_DIR$/target/classes/HomeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/UrlMappings.class" afterPath="$PROJECT_DIR$/target/classes/UrlMappings.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/resources.class" afterPath="$PROJECT_DIR$/target/classes/resources.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application-cfc-methods.iml" afterPath="$PROJECT_DIR$/application-cfc-methods.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/HomeController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/HomeController.groovy" />
@@ -25,34 +104,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" line="16" class="BootStrap" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/grails-app/controllers/HomeController.groovy" line="6" class="HomeController" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -66,8 +117,8 @@
         <option name="CONDITION_ENABLED" value="false" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -81,32 +132,91 @@
         <option name="CONDITION_ENABLED" value="false" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules />
-    <ui_properties />
+    <ui_properties>
+      <property name="line_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_flattenPackages" value="true" />
+      <property name="method_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_flattenPackages" value="true" />
+      <property name="exception_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_viewId" value="TABLE" />
+      <property name="field_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="exception_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="method_breakpoints_groupByMethods" value="false" />
+    </ui_properties>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="application-cfc-methods" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+            <state line="8" column="11" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeControllerTests.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/application/cfc/methods/HomeControllerTests.groovy">
+      <file leaf-file-name="MyHttpSessionListener.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/com/compiledammit/MyHttpSessionListener.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+            <state line="8" column="14" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#27#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpSessionService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/compiledammit/HttpSessionService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="50" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_Events.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="1" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrailsContextLoaderListener.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/grails/dist/grails-web-2.1.0.jar!/org/codehaus/groovy/grails/web/context/GrailsContextLoaderListener.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#450#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrailsContextLoaderListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/grails/src/grails-web-2.1.0-sources.jar!/org/codehaus/groovy/grails/web/context/GrailsContextLoaderListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#1088#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,34 +224,34 @@
       <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2923" selection-end="3035" vertical-scroll-proportion="0.0">
+            <state line="69" column="1" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/HomeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="0.20523138">
+            <state line="8" column="101" selection-start="289" selection-end="289" vertical-scroll-proportion="-5.9130435">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="24" selection-start="2989" selection-end="2989" vertical-scroll-proportion="-4.755102">
+            <state line="124" column="45" selection-start="3427" selection-end="3427" vertical-scroll-proportion="0.924612">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <file leaf-file-name="SingletonExampleService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/com/compiledammit/SingletonExampleService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+            <state line="6" column="4" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,25 +265,49 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/HomeController.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/compiledammit/MyHTTPSessionListener.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/compiledammit/MyHttpSessionListener.groovy" />
+        <option value="$PROJECT_DIR$/src/templates/war/web.xml" />
+        <option value="$PROJECT_DIR$/test/integration/Test.groovy" />
+        <option value="$PROJECT_DIR$/test/integration/TestTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+        <option value="$PROJECT_DIR$/scripts/_Events.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/compiledammit/SingletonExampleService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/com/compiledammit/HttpSessionService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/HomeController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/home/index.gsp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -189,7 +323,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -200,155 +334,58 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application-cfc-methods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/grails-app/controllers" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/grails-app/services/com/compiledammit" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="web.server" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.compiledammit" />
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\558848\Documents\Projects\grails-test-bed\application-cfc-methods\grails-app\views\home" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:application-cfc-methods">
+    <configuration default="false" name="All in application-cfc-methods" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea" />
+      <module name="application-cfc-methods" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -462,8 +499,9 @@
         <option name="Make" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Grails.Grails:application-cfc-methods" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in application-cfc-methods" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -498,7 +536,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -507,26 +545,26 @@
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39845476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39845476" sideWeight="0.47863248" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39845476" sideWeight="0.5176282" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.491453" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16720085" sideWeight="0.6015453" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946581" sideWeight="0.23730685" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946581" sideWeight="0.23730685" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946581" sideWeight="0.6015453" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24946581" sideWeight="0.6015453" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.48931623" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.48076922" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -594,42 +632,85 @@
         <state line="258" column="22" selection-start="7235" selection-end="7235" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" />
+        <state line="8" column="34" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="24" selection-start="2989" selection-end="2989" vertical-scroll-proportion="-4.755102">
+        <state line="8" column="11" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2923" selection-end="3035" vertical-scroll-proportion="0.0">
+        <state line="69" column="1" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/application/cfc/methods/HomeControllerTests.groovy">
+    <entry file="jar://C:/grails/dist/grails-web-2.1.0.jar!/org/codehaus/groovy/grails/web/context/GrailsContextLoaderListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/grails/src/grails-web-2.1.0-sources.jar!/org/codehaus/groovy/grails/web/context/GrailsContextLoaderListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#1088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/_Events.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/compiledammit/MyHttpSessionListener.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+        <state line="8" column="14" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#27#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/compiledammit/SingletonExampleService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/com/compiledammit/HttpSessionService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="50" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/HomeController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="0.20523138">
+        <state line="8" column="101" selection-start="289" selection-end="289" vertical-scroll-proportion="-5.9130435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/home/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="45" selection-start="3427" selection-end="3427" vertical-scroll-proportion="0.924612">
           <folding />
         </state>
       </provider>
