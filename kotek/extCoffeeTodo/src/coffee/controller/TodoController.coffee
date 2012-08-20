@@ -1,7 +1,7 @@
-Ext.define( 'ExtCoffeeTodo.controller.TodoController',
-	extend: 'Deft.mvc.ViewController'
-	requires: [ 'ExtCoffeeTodo.store.TodoStore' ]
-	inject: [ 'todoStore' ]
+Ext.define( "ExtCoffeeTodo.controller.TodoController",
+	extend: "Deft.mvc.ViewController"
+	requires: [ "ExtCoffeeTodo.store.TodoStore" ]
+	inject: [ "todoStore" ]
 
 	# Handle view events
 	control:

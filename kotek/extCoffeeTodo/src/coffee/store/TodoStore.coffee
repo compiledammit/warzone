@@ -1,24 +1,24 @@
-Ext.define( 'ExtCoffeeTodo.store.TodoStore',
-	extend: 'Ext.data.Store'
-	requires: [ 'ExtCoffeeTodo.model.Todo' ]
+Ext.define( "ExtCoffeeTodo.store.TodoStore",
+	extend: "Ext.data.Store"
+	requires: [ "ExtCoffeeTodo.model.Todo" ]
 
 
 	# Store interacts with remote API
 	constructor: ->
 		config =
 			autoLoad: true
-			model: 'ExtCoffeeTodo.model.Todo'
+			model: "ExtCoffeeTodo.model.Todo"
 			proxy:
-				type: 'ajax'
+				type: "ajax"
 				api:
-					create  : 'todo/ajaxCreate',
-					read    : 'todo/ajaxList',
-					update  : 'todo/ajaxSave',
+					create  : "todo/ajaxCreate",
+					read    : "todo/ajaxList",
+					update  : "todo/ajaxSave",
 					reader:
-						type: 'json'
+						type: "json"
 			sorters: [
-				property: 'dateCreated'
-				direction: 'DESC'
+				property: "dateCreated"
+				direction: "DESC"
 			]
 			filters: [ @completedFilter ]
 
@@ -42,7 +42,7 @@ Ext.define( 'ExtCoffeeTodo.store.TodoStore',
 
 
 	completedFilter: ( record ) ->
-		if @_showCompleted then return true else return ( not record.get( 'complete' ) )
+		if @_showCompleted then return true else return ( not record.get( "complete" ) )
 
 
 	resort: ->

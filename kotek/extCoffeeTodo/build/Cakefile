@@ -9,17 +9,6 @@ catch error
   console.error 'Please run `npm install colors` first'
   process.exit 1
 
-
-# Setup directory paths
-###
-sourceDir = '../src/main/coffeescript'
-outputDir = '../src/main/webapp/app'
-deployDir = '../../../../deployment/owf-tomcat/webapps/geoloc-approval-widget/app'
-testSourceDir = '../src/test/spec/coffeescript'
-testOutputDir = '../src/test/spec/js'
-testDeployDir = '../../../../deployment/owf-tomcat/webapps/geoloc-approval-widget/test/js'
-###
-
 # Options for parameterized watchany task
 options =
   sourceDir: null

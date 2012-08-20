@@ -13,7 +13,7 @@ Ext.application({
   name: "ExtCoffeeTodo"
 });
 
-Ext.require('ExtCoffeeTodo.store.TodoStore');
+Ext.require("ExtCoffeeTodo.store.TodoStore");
 
 Ext.onReady(function() {
   return Deft.Injector.configure({

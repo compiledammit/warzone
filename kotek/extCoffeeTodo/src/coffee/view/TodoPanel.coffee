@@ -1,15 +1,15 @@
-Ext.define( 'ExtCoffeeTodo.view.TodoPanel',
-	extend: 'Ext.grid.Panel'
-	alias: 'widget.extcoffeetodo-view-todoPanel'
-	requires: [ 'Ext.ux.CheckColumn', 'ExtCoffeeTodo.store.TodoStore' ]
-	inject: [ 'todoStore' ]
-	controller: 'ExtCoffeeTodo.controller.TodoController'
+Ext.define( "ExtCoffeeTodo.view.TodoPanel",
+	extend: "Ext.grid.Panel"
+	alias: "widget.extcoffeetodo-view-todoPanel"
+	requires: [ "Ext.ux.CheckColumn", "ExtCoffeeTodo.store.TodoStore" ]
+	inject: [ "todoStore" ]
+	controller: "ExtCoffeeTodo.controller.TodoController"
 
-	layout: 'anchor'
+	layout: "anchor"
 	title: "ExtJS and CoffeeScript Todo List"
 
 	# Grid plugin to allow inline editing.
-	cellEditing: Ext.create( 'Ext.grid.plugin.CellEditing',
+	cellEditing: Ext.create( "Ext.grid.plugin.CellEditing",
 		clicksToEdit: 1
 	)
 
@@ -29,10 +29,10 @@ Ext.define( 'ExtCoffeeTodo.view.TodoPanel',
 					emptyText: "Enter Todo Description"
 					allowBlank: false
 			,
-				text: 'Created'
-				dataIndex: 'dateCreated'
-				xtype: 'datecolumn'
-				format:'m-d-Y g:i A'
+				text: "Created"
+				dataIndex: "dateCreated"
+				xtype: "datecolumn"
+				format:"m-d-Y g:i A"
 				width: 150
 			,
 				xtype: "checkcolumn"
@@ -52,7 +52,7 @@ Ext.define( 'ExtCoffeeTodo.view.TodoPanel',
 				itemId: "addButton"
 				iconCls: "add-icon"
 			,
-				'->'
+				"->"
 			,
 				xtype: "checkbox"
 				itemId: "showCompletedCheckbox"
