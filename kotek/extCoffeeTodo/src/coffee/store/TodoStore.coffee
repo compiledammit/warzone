@@ -27,6 +27,7 @@ Ext.define( "ExtCoffeeTodo.store.TodoStore",
 
 	onUpdateRecords: ->
 		@filterBy( @completedFilter )
+		@resort()
 
 
 	onCreateRecords: ->
