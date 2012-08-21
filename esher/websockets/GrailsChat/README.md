@@ -4,9 +4,12 @@ The JavaScript is virtually identical; the Grails service uses a slightly modifi
 
 # Modifications
 
-1. In your Atmosphere plugin's `dependencies.groovy` file, in the compile dependency, change the version to `org.atmosphere:atmosphere-runtime:1.0.0.beta5`
+1. In BuildConfig.groovy, I added a compile dependency to update to the latest Atmosphere and override the dependency in the Atmosphere plugin
+> compile('org.atmosphere:atmosphere-runtime:1.0.0.beta5') {
+              excludes 'slf4j-api', 'atmosphere-ping'
+          }
 
-2. Replace the `jquery.atmosphere.js` file with the latest one in [Stephane's repo](https://github.com/smaldini/grails-atmosphere/tree/master/web-app/js/jquery)
+2. In *your* Atmosphere plugin, replace the `jquery.atmosphere.js` file with the latest one in [Stephane's repo](https://github.com/smaldini/grails-atmosphere/tree/master/web-app/js/jquery)
 
 # Tomcat Configuration
 
@@ -24,7 +27,7 @@ Using Tomcat 7.0.29, the chat application worked fine for me using the HTTP/1.1 
 In addition, these settings have previously been required:
 
 * In `Config.groovy`, note I've set `tomcat.nio=true`. You'll want to do the same in your applications that use websockets for use with the Tomcat plugin (i.e. run-app)
-> Without tomcat.nio=true, the shell will lose the `grails>` prompt
-* In `BuildConfig.groovy`, I've set `grails.tomcat.nio=true`
+> Without tomcat.nio=true, Tomcat will block and the shell will lose the `grails>` prompt
+* In `BuildConfig.groovy`, I've seen `grails.tomcat.nio=true`
 > I do not know what effect, if any, this setting has. I am not using it.
 
