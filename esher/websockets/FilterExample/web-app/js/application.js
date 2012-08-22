@@ -1,7 +1,6 @@
 $(function () {
     "use strict";
 
-    console.log("HIIIIIIII")
 
     var header = $('#header');
     var content = $('#content');
@@ -17,7 +16,7 @@ $(function () {
     var chatUrl = 'http://'+document.location.hostname+':'+document.location.port+'/FilterExample/atmosphere/chat';
 
     // We are now ready to cut the request
-    var request = { url: chatUrl,
+    var request = { url: chatUrl + "/all",
         contentType : "application/json",
         logLevel : 'debug',
         shared : 'true',
