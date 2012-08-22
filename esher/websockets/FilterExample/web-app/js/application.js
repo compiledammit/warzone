@@ -1,6 +1,8 @@
 $(function () {
     "use strict";
 
+    console.log("HIIIIIIII")
+
     var header = $('#header');
     var content = $('#content');
     var input = $('#input');
@@ -22,13 +24,15 @@ $(function () {
         transport : transport ,
         fallbackTransport: 'long-polling'};
 
-    var pierequest = { url : chatUrl + "/pie",
+    var pierequest = { url : chatUrl +"/pie",
         contentType : "application/json",
         logLevel : "debug",
         shared : "true",
         transport : transport,
         fallbackTransport: "long-polling"
     };
+
+    console.log(pierequest)
 
 
     request.onOpen = function(response) {
@@ -145,10 +149,6 @@ $(function () {
             }
             var json = jQuery.stringifyJSON({ author: author, message: msg });
             subSocket.push(json);
-
-            if( msg.indexOf("pie")){
-                pieSocket.push(json)
-            }
 
             $(this).val('');
 
