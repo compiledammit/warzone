@@ -10,6 +10,7 @@ $(function () {
     var logged = false;
     var socket = $.atmosphere;
     var subSocket;
+    var pieSocket;
     var transport = 'websocket';
     var chatUrl = 'http://'+document.location.hostname+':'+document.location.port+'/FilterExample/atmosphere/chat';
 
@@ -20,6 +21,14 @@ $(function () {
         shared : 'true',
         transport : transport ,
         fallbackTransport: 'long-polling'};
+
+    var pierequest = { url : chatUrl + "/pie",
+        contentType : "application/json",
+        logLevel : "debug",
+        shared : "true",
+        transport : transport,
+        fallbackTransport: "long-polling"
+    };
 
 
     request.onOpen = function(response) {
@@ -32,6 +41,12 @@ $(function () {
             subSocket.pushLocal("Name?");
         }
     };
+
+    pierequest.onOpen = function(response){
+        console.log("PieRequest Opened");
+        console.log(response);
+        pieSocket.pushLocal("PieRequest opened")
+    }
 
     <!-- You can share messages between window/tabs.   -->
     request.onLocalMessage = function(message) {
@@ -50,6 +65,11 @@ $(function () {
         }
     };
 
+    pierequest.onLocalMessage = function(message){
+        console.log("PieRequest onLocalMessage")
+        console.log(message)
+    }
+
     <!-- For demonstration of how you can customize the fallbackTransport using the onTransportFailure function -->
     request.onTransportFailure = function(errorMsg, request) {
         jQuery.atmosphere.info(errorMsg);
@@ -59,6 +79,10 @@ $(function () {
         }
         header.html($('<h3>', { text: 'Atmosphere Chat. Default transport is WebSocket, fallback is ' + request.fallbackTransport }));
     };
+
+    pierequest.onTransportFailure = function(errorMsg, request){
+        console.log("PieRequest Transport Failure")
+    }
 
     request.onReconnect = function (request, response) {
         socket.info("Reconnecting")
@@ -94,6 +118,11 @@ $(function () {
         }
     };
 
+    pierequest.onMessage = function( response ){
+        console.log( "Pie Request Message: ");
+        console.log( response );
+    }
+
     request.onClose = function(response) {
         logged = false;
     }
@@ -104,6 +133,7 @@ $(function () {
     };
 
     subSocket = socket.subscribe(request);
+    pieSocket = socket.subscribe(pierequest)
 
     input.keydown(function(e) {
         if (e.keyCode === 13) {
@@ -113,8 +143,13 @@ $(function () {
             if (author == null) {
                 author = msg;
             }
+            var json = jQuery.stringifyJSON({ author: author, message: msg });
+            subSocket.push(json);
 
-            subSocket.push(jQuery.stringifyJSON({ author: author, message: msg }));
+            if( msg.indexOf("pie")){
+                pieSocket.push(json)
+            }
+
             $(this).val('');
 
             //input.attr('disabled', 'disabled');

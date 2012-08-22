@@ -5,6 +5,7 @@
 <head>
     <meta name="layout" content="main">
   <title>Filter Example</title>
+
 </head>
 <body>
 <atmosphere:resources/>
@@ -14,6 +15,11 @@
 <div>
     <span id="status">Connecting...</span>
     <input type="text" id="input"/>
+</div>
+
+<div id="pieholder">
+    <span id="piestarter">Pie messages will go here</span>
+
 </div>
 
 </body>
