@@ -53,6 +53,6 @@ class ChatService {
     }
 
     private String createMessage(String author, String text) {
-        return new JSON( [text : text, author : author, time : new Date().time] ).toString()
+        return new JSON( [text : text, author : author, time : new Date().time] )
     }
 }
