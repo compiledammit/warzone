@@ -1,9 +1,10 @@
 package com.compiledammit
 
+import org.codehaus.groovy.grails.commons.ApplicationHolder
+
 import javax.servlet.http.HttpSession
 import javax.servlet.http.HttpSessionEvent
 import javax.servlet.http.HttpSessionListener
-import org.codehaus.groovy.grails.commons.ApplicationHolder
 
 class MyHttpSessionListener implements HttpSessionListener {
     HttpSessionService httpSessionService
@@ -20,7 +21,7 @@ class MyHttpSessionListener implements HttpSessionListener {
         getHttpSessionService().sessionDestroyed(session)
     }
 
-    private synchronized HttpSessionService getHttpSessionService () {
+    private synchronized HttpSessionService getHttpSessionService() {
         if (httpSessionService == null) {
             httpSessionService =
                 (HttpSessionService) ApplicationHolder

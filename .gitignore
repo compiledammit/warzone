@@ -10,3 +10,10 @@
 atlassian-ide-plugin.xml
 target/
 target-eclipse/
+/sharp/application-cfc-methods/.idea
+/sharp/application-cfc-methods/.settings
+/sharp/application-cfc-methods/out
+.idea
+.settings
+out
+application.properties
