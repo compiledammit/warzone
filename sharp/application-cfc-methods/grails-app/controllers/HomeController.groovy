@@ -13,10 +13,6 @@ class HomeController {
         singletonExampleService.pageHits++
         sessionProxy.pageHits++
 
-        grailsApplication.controllerClasses.each {
-            groovy.inspect.swingui.ObjectBrowser.inspect( it )
-        }
-
         [pageHits: singletonExampleService.pageHits, sessionHits: sessionProxy.pageHits]
     }
 
