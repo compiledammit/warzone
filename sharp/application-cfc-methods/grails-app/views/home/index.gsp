@@ -122,7 +122,7 @@
                 Page Hits:  ${pageHits}
             </p>
             <p>
-                Session Init?  ${sessionInit}
+                Session Hits:  ${sessionHits}
             </p>
         </div>
 	</body>
