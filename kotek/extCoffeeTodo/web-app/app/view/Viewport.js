@@ -9,8 +9,8 @@ Ext.define("ExtCoffeeTodo.view.Viewport", {
         {
           xtype: "container",
           layout: {
-            type: 'hbox',
-            pack: 'center',
+            type: "hbox",
+            pack: "center",
             padding: 10
           },
           items: [

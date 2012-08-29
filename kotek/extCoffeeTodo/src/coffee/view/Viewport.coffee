@@ -11,8 +11,8 @@ Ext.define "ExtCoffeeTodo.view.Viewport",
 			items: [
 				xtype: "container"
 				layout:
-					type: 'hbox'
-					pack: 'center'
+					type: "hbox"
+					pack: "center"
 					padding: 10
 				items: [
 					xtype: "extcoffeetodo-view-todoPanel"
