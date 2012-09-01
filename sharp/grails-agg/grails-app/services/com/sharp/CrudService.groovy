@@ -5,7 +5,7 @@ import javax.annotation.PostConstruct
 
 class CrudService {
 
-    def list(Class classRef, params) {
+    def list(classRef, params) {
         params.max = Math.min(params.max as Integer ?: 10, 100)
         [list: classRef.list(params), total: classRef.count()]
     }
