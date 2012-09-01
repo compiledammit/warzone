@@ -64,7 +64,8 @@ class ${className}Controller {
             }
         }
 
-        def saved = crudService.update(${propertyName}, params)
+        ${propertyName}.properties = params
+        def saved = crudService.update(${propertyName})
 
         if (!${propertyName}.hasErrors()) {
             flash.message = message(code: 'default.updated.message', args: [message(code: '${domainClass.propertyName}.label', default: '${className}'), ${propertyName}.id])

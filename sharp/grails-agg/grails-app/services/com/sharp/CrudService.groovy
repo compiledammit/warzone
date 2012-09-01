@@ -15,8 +15,7 @@ class CrudService {
         return instance.save(flush: true)
     }
 
-    def update(instance, params) {
-        instance.properties = params
+    def update(instance) {
         return save(instance)
     }
 

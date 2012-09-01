@@ -3,9 +3,7 @@ package com.sharp.agg.feed
 
 
 import com.sharp.CrudService
-import grails.plugins.springsecurity.Secured
 
-@Secured(['ROLE_ADMIN'])
 class TagController {
     CrudService crudService
 
@@ -28,11 +26,11 @@ class TagController {
         def tagInstance = new Tag(params);
         def saved = crudService.save(tagInstance)
         if (saved) {
-            flash.message = message(code: 'default.created.message', args: [message(code: 'tag.label', default: 'Tag'), tagInstance.id])
-            redirect(action: "show", id: tagInstance.id)
+           flash.message = message(code: 'default.created.message', args: [message(code: 'tag.label', default: 'Tag'), tagInstance.id])
+           redirect(action: "show", id: tagInstance.id)
         }
         else {
-            render(view: "create", model: [tagInstance: tagInstance])
+           render(view: "create", model: [tagInstance: tagInstance])
         }
     }
 
@@ -68,7 +66,8 @@ class TagController {
             }
         }
 
-        def saved = crudService.update(tagInstance, params)
+        tagInstance.properties = params
+        def saved = crudService.update(tagInstance)
 
         if (!tagInstance.hasErrors()) {
             flash.message = message(code: 'default.updated.message', args: [message(code: 'tag.label', default: 'Tag'), tagInstance.id])

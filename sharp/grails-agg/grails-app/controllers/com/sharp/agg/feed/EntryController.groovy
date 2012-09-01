@@ -3,9 +3,7 @@ package com.sharp.agg.feed
 
 
 import com.sharp.CrudService
-import grails.plugins.springsecurity.Secured
 
-@Secured(['ROLE_ADMIN'])
 class EntryController {
     EntryService entryService
 
@@ -68,7 +66,8 @@ class EntryController {
             }
         }
 
-        def saved = entryService.update(entryInstance, params)
+        entryInstance.properties = params
+        def saved = entryService.update(entryInstance)
 
         if (!entryInstance.hasErrors()) {
             flash.message = message(code: 'default.updated.message', args: [message(code: 'entry.label', default: 'Entry'), entryInstance.id])
