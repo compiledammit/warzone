@@ -23,11 +23,11 @@
 			</g:if>
 			<ol class="property-list tag">
 			
-				<g:if test="${instance?.tag}">
+				<g:if test="${tagInstance?.tag}">
 				<li class="fieldcontain">
 					<span id="tag-label" class="property-label"><g:message code="tag.tag.label" default="Tag" /></span>
 					
-						<span class="property-value" aria-labelledby="tag-label"><g:fieldValue bean="${instance}" field="tag"/></span>
+						<span class="property-value" aria-labelledby="tag-label"><g:fieldValue bean="${tagInstance}" field="tag"/></span>
 					
 				</li>
 				</g:if>
@@ -35,8 +35,8 @@
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
-					<g:hiddenField name="id" value="${instance?.id}" />
-					<g:link class="edit" action="edit" id="${instance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<g:hiddenField name="id" value="${tagInstance?.id}" />
+					<g:link class="edit" action="edit" id="${tagInstance?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>

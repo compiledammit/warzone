@@ -1,8 +1,8 @@
 package com.sharp.agg.feed
 
-import com.sharp.agg.BaseService
+import com.sharp.CrudService
 
-class FeedService extends BaseService {
+class EntryService extends CrudService {
 
     def getEntries(url) {
         def xmlFeed = new XmlParser().parse(url);

@@ -29,7 +29,7 @@
 					</tr>
 				</thead>
 				<tbody>
-				<g:each in="${instanceList}" status="i" var="tagInstance">
+				<g:each in="${tagInstanceList}" status="i" var="tagInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${tagInstance.id}">${fieldValue(bean: tagInstance, field: "tag")}</g:link></td>
@@ -39,7 +39,7 @@
 				</tbody>
 			</table>
 			<div class="pagination">
-				<g:paginate total="${instanceTotal}" />
+				<g:paginate total="${tagInstanceTotal}" />
 			</div>
 		</div>
 	</body>

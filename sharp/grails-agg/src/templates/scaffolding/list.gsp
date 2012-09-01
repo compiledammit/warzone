@@ -37,7 +37,7 @@
 					</tr>
 				</thead>
 				<tbody>
-				<g:each in="\${instanceList}" status="i" var="${propertyName}">
+				<g:each in="\${${propertyName}List}" status="i" var="${propertyName}">
 					<tr class="\${(i % 2) == 0 ? 'even' : 'odd'}">
 					<%  props.eachWithIndex { p, i ->
 							if (i == 0) { %>
@@ -55,7 +55,7 @@
 				</tbody>
 			</table>
 			<div class="pagination">
-				<g:paginate total="\${instanceTotal}" />
+				<g:paginate total="\${${propertyName}Total}" />
 			</div>
 		</div>
 	</body>

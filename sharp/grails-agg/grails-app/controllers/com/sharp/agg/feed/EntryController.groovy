@@ -1,5 +1,8 @@
 package com.sharp.agg.feed
 
+
+
+import com.sharp.CrudService
 import grails.plugins.springsecurity.Secured
 
 @Secured(['ROLE_ADMIN'])
@@ -13,33 +16,34 @@ class EntryController {
     }
 
     def list(Integer max) {
-        return entryService.list(params)
+        def l = entryService.list(Entry, params)
+        return [entryInstanceList: l.list, entryInstanceTotal: l.total]
     }
 
     def create() {
-        return entryService.create(params)
+        return entryService.create(Entry, params)
     }
 
     def save() {
-        def instance = new Entry(params);
-        def saved = entryService.save(instance)
+        def entryInstance = new Entry(params);
+        def saved = entryService.save(entryInstance)
         if (saved) {
-            flash.message = message(code: 'default.created.message', args: [message(code: 'entry.label', default: 'Entry'), instance.id])
-            redirect(action: "show", id: instance.id)
+           flash.message = message(code: 'default.created.message', args: [message(code: 'entry.label', default: 'Entry'), entryInstance.id])
+           redirect(action: "show", id: entryInstance.id)
         }
         else {
-            render(view: "create", model: [instance: instance])
+           render(view: "create", model: [entryInstance: entryInstance])
         }
     }
 
     def show(Long id) {
-        def instance = Entry.get(id)
-        if (!instance) {
+        def entryInstance = Entry.get(id)
+        if (!entryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'entry.label', default: 'Entry'), id])
             redirect(action: "list")
             return
         }
-        return [instance: instance]
+        return [entryInstance: entryInstance]
     }
 
     def edit(Long id) {
@@ -47,42 +51,43 @@ class EntryController {
     }
 
     def update(Long id, Long version) {
-        def instance = Entry.get(id)
 
-        if (!instance) {
+        def entryInstance = Entry.get(id)
+
+        if (!entryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'entry.label', default: 'Entry'), id])
             redirect(action: "list")
             return
         }
 
         if (version != null) {
-            if (instance.version > version) {
-                instance.errors.rejectValue("version", "default.optimistic.locking.failure",
+            if (entryInstance.version > version) {
+                entryInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
                         [message(code: 'entry.label', default: 'Entry')] as Object[],
-                        "Another user has updated this Entry while you were editing")
+                        "Another user has updated this ${className} while you were editing")
             }
         }
 
-        def saved = entryService.update(instance, params)
+        def saved = entryService.update(entryInstance, params)
 
-        if (!instance.hasErrors()) {
-            flash.message = message(code: 'default.updated.message', args: [message(code: 'entry.label', default: 'Entry'), instance.id])
-            redirect(action: "show", id: instance.id)
+        if (!entryInstance.hasErrors()) {
+            flash.message = message(code: 'default.updated.message', args: [message(code: 'entry.label', default: 'Entry'), entryInstance.id])
+            redirect(action: "show", id: entryInstance.id)
         }
         else {
-            render(view: "edit", model: [instance: instance])
+            render(view: "edit", model: [entryInstance: entryInstance])
             return
         }
     }
 
     def delete(Long id) {
-        def instance = Entry.get(id)
-        if (!instance) {
+        def entryInstance = Entry.get(id)
+        if (!entryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'entry.label', default: 'Entry'), id])
             redirect(action: "list")
             return
         }
-        def deleted = entryService.delete(id)
+        def deleted = entryService.delete(Entry, id)
         if (deleted) {
             flash.message = message(code: 'default.deleted.message', args: [message(code: 'entry.label', default: 'Entry'), id])
             redirect(action: "list")

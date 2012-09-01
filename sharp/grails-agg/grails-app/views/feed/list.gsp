@@ -37,7 +37,7 @@
 					</tr>
 				</thead>
 				<tbody>
-				<g:each in="${instanceList}" status="i" var="feedInstance">
+				<g:each in="${feedInstanceList}" status="i" var="feedInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${feedInstance.id}">${fieldValue(bean: feedInstance, field: "title")}</g:link></td>
@@ -55,7 +55,7 @@
 				</tbody>
 			</table>
 			<div class="pagination">
-				<g:paginate total="${instanceTotal}" />
+				<g:paginate total="${feedInstanceTotal}" />
 			</div>
 		</div>
 	</body>
