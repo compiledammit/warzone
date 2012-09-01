@@ -1,8 +1,5 @@
 package com.sharp
 
-
-import javax.annotation.PostConstruct
-
 class CrudService {
 
     def list(classRef, params) {
