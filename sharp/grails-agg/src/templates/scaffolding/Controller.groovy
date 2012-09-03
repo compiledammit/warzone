@@ -17,7 +17,8 @@ class ${className}Controller {
     }
 
     def create() {
-        return crudService.create(${className}, params)
+        def ${propertyName} = crudService.create(${className}, params)
+        return [${propertyName}: ${propertyName}.instance]
     }
 
     def save() {

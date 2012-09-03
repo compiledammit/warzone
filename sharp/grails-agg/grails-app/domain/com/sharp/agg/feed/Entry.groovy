@@ -8,11 +8,11 @@ class Entry {
     Date dateCreated
 
     static belongsTo = [feed: Feed]
-    static hasMany = [tags: Tag]
+    static hasMany = [categories: Category]
 
     static constraints = {
         title(blank: false, maxSize: 250)
-        link(blank:  false, url: true, unique: true, maxSize: 500)
+        link(blank:  false, url: true, unique: true, maxSize: 1000)
         contents(blank: false, maxSize: 4000)
         postedOn()
     }

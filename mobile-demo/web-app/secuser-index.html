@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Page</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+<link rel="stylesheet" href="http://dev.jtsage.com/cdn/datebox/1.1.0/jqm-datebox-1.1.0.min.css"  /> 
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/secuser-list.js"></script>
+<script src="js/secuser-edit.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+<script src="http://dev.jtsage.com/cdn/datebox/1.1.0/jqm-datebox-1.1.0.core.min.js"></script>
+<script src="http://dev.jtsage.com/cdn/datebox/1.1.0/jqm-datebox-1.1.0.mode.datebox.min.js"></script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<style type="text/css">
+.visible {display:inline;}
+.invisible {display:none;}
+</style>
+
+</head>
+
+<body>
+	<section data-role="page" id="section-list-secusers">
+	  <div data-role="header" data-position="fixed">
+	    
+        <a data-transition="none" data-role="button" data-icon="grid" id="list-all-secusers">List</a>
+        <h1>SecUser</h1>
+        <a data-transition="none" data-role="button" data-icon="star" id="map-all-secusers">Map</a>
+        
+        </div>	
+        	
+        <div data-role="content" class="invisible" id="list-secusers-parent">
+        
+			<ul data-role="listview" data-inset="true" data-filter="true" id="list-secusers">
+			</ul>
+		</div>
+        	
+		<div data-role="content" class="visible"  id="map-secusers-parent">
+		  <div style="height: 70%;width: 100%;position: absolute;" id="map-canvas-all" ></div>
+		</div>
+        
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#section-show-secuser" data-transition="slide" data-role="button" data-icon="plus">Add</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<section data-role="page" id="section-show-secuser">
+		<div data-role="header" id="show-secuser" data-position="fixed">
+			<a href="#section-list-secusers" data-transition="slide" data-icon="arrow-l">Cancel</a>
+			<h1>SecUser</h1>
+		</div>
+     <div id="form-update-secuser">
+        <ul data-role="listview" data-inset="true">
+          
+            <li data-role="fieldcontain">
+              
+              <label for="input-secuser-accountExpired">Account Expired</label>
+              <input type="checkbox" name="accountExpired" id="input-secuser-accountExpired" value=""/>
+              
+            </li>
+         
+            <li data-role="fieldcontain">
+              
+              <label for="input-secuser-accountLocked">Account Locked</label>
+              <input type="checkbox" name="accountLocked" id="input-secuser-accountLocked" value=""/>
+              
+            </li>
+         
+            <li data-role="fieldcontain">
+              
+              <label for="input-secuser-enabled">Enabled</label>
+              <input type="checkbox" name="enabled" id="input-secuser-enabled" value=""/>
+              
+            </li>
+         
+            <li data-role="fieldcontain">
+              
+              <label for="input-secuser-password">Password</label>
+              <input type="text" name="password" id="input-secuser-password" value=""/>
+              
+            </li>
+         
+            <li data-role="fieldcontain">
+              
+              <label for="input-secuser-passwordExpired">Password Expired</label>
+              <input type="checkbox" name="passwordExpired" id="input-secuser-passwordExpired" value=""/>
+              
+            </li>
+         
+            <li data-role="fieldcontain">
+              
+              <label for="input-secuser-username">Username</label>
+              <input type="text" name="username" id="input-secuser-username" value=""/>
+              
+            </li>
+         
+        </ul>
+        
+		<input type="hidden" name="longitude" id="input-secuser-longitude" /> 
+		<input type="hidden" name="latitude" id="input-secuser-latitude" />
+		
+		
+        <input type="hidden" name="id" id="input-secuser-id"/>
+        <input type="hidden" name="version" id="input-secuser-version"/>
+        <input type="hidden" name="class" id="input-secuser-class"/>
+    </div>
+    
+    <div id="map_canvas" style="height: 70%;width: 100%;position: absolute;"></div>
+    
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#section-list-secusers" data-transition="slide" data-role="button" data-icon="delete" id="delete-secuser">Delete</a></li> 
+          <li><a href="#section-list-secusers" data-transition="slide" data-icon="save" id="submit-secuser">Save</a></li>
+        </ul>
+      </div>
+    </div>
+	</section>
+</body>
+</html>

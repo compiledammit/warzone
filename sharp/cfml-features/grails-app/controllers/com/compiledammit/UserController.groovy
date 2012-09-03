@@ -20,18 +20,22 @@ class UserController {
     }
 
     def save() {
-        def userInstance = new User()
-        userInstance.properties['username', 'password', 'email'] = new User(params)
+def userInstance = new User()
+userInstance.properties['username', 'password', 'email'] = new User(params)
 
-        // if this is a new user, send an email
-        if( !userInstance.version )
-        {
-            sendMail{
-                to userInstance.email
-                subject "New Account"
-                html "Your <strong>new</strong> account is set up.  Your username is: " + userInstance.username + ".  Your password is: " + userInstance.password + ".  Your email address is: " + userInstance.email + "."
-            }
-        }
+// if this is a new user, send an email
+if( !userInstance.version )
+{
+    sendMail{
+        to userInstance.email
+        subject "New Account"
+        html """
+Your <strong>new</strong> account is set up.
+Your username is: """ + userInstance.username + """.
+Your password is: """ + userInstance.password + """.
+Your email address is: """ + userInstance.email + "."
+    }
+}
         if (!userInstance.save(flush: true)) {
             render(view: "create", model: [userInstance: userInstance])
             return

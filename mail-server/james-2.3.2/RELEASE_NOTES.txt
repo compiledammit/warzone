@@ -1,0 +1,107 @@
+Release Notes - Apache JAMES Server
+===================================
+The Apache James Server is a 100% pure Java SMTP and POP3 Mail server 
+and NNTP News server designed to be a complete and portable enterprise 
+mail engine solution. James is based on currently available open protocols.
+
+The James server also serves as a mail application platform. The James 
+project hosts the Apache Mailet API, and the James server is a Mailet 
+container. This feature makes it easy to design, write, and deploy custom 
+applications for mail processing. This modularity and ease of customization 
+is one of James' strengths, and can allow administrators to produce powerful 
+applications surprisingly easily. 
+
+Version 2.3.2
+=============
+Is a point release which is (almost) compatible with 2.3.1.
+
+Known Incompatibility
+-----------------------
+The management of the MessageID header has been altered to improve
+compliance with the specification. Previously, the MessageID was 
+frequently altered by mailets. Now, MessageIDs must be explicitly
+updated. In particular, when cloning a MimeMessage to create a new,
+different message the MessageID must be programmatically updated. 
+
+Notes
+-----
+  * The Mordred data source is deprecated and will be removed in a future 
+    minor release.
+  * The cryptography mailets and matchers are now available as a separate 
+    library (http://james.apache.org/mailet/crypto/). The versions included
+    will be replaced by this library in a future minor release. Users
+    should upgrade to the library versions.
+ 
+Since 2.3.1
+-----------        
+Bug Fixes
+ * JAMES-435 - James Service Wrapper displays wrong James version
+ * JAMES-770 - Exception when runnning JAMES with run.sh
+ * JAMES-787 - Unable to resolv 127.0.0.1/localhost  [was: Fetchmail 
+               not use 127.0.0.1 as RemoteAddress when using index=-1]
+ * JAMES-801 - Using database" documentation should reflect removal 
+               of mysql jdbc driver.
+ * JAMES-814 - tools/bin/ant has malformed line endings
+ * JAMES-815 - The build process should auto-create the www directory
+ * JAMES-846 - RemoteDelivery convertTo7Bit() can corrupt message content. 
+ * JAMES-851 - RemoteManagerTest fails because of bugs in the test
+ * JAMES-875 - Message-ID changed by mailets (MSGID_FROM_MTA_HEADER changed)
+ * JAMES-899 - RemoteDelivery sends a message again and again if 
+               transport.close() throws a MessagingException
+ * JAMES-912 - phoenix.sh script misdetects PHOENIX_HOME
+ 
+New Features
+ * JAMES-849 - Support PostgreSQL for BayesianAnalysis
+
+Tasks Completed
+ * JAMES-693 - Update javamail to 1.4.1 final when available
+ * JAMES-800 - UPGRADE.txt in trunk (and in 2.3.x branch) provides docs 
+               for updating from 2.2.0 to 2.3.0: should be updated or made clear
+ * JAMES-812 - Fix JIRA versions. next-minor and next-major do not have 
+               anymore meaning.
+ * JAMES-816 - Update to dnsjava 2.0.6
+ * JAMES-903 - Subversion Caretaking
+ * JAMES-907 - Run RAT
+ 
+Version 2.3.1
+=============
+Since 2.3.0
+-----------    
+Sub-tasks Completed
+ * JAMES-718 - Add warning to config.xml to explain the problems which can happen 
+               with matchers which extend AbstractStorageQuota
+ * JAMES-790 - Remove ordb.org from docs
+    
+Bugs Fixed
+ * JAMES-592 - OOM caused by unbounded cache in InetAddress 
+               (was James leaks memory slowly)
+ * JAMES-662 - sendmail.py doesn't handle multiple TO-recipients
+ * JAMES-663 - sendmail.py crashes on line "from_addr = os.environ['USER'] + '@' + 
+               socket.getfqdn()"
+ * JAMES-671 - ServerConnection doesn't properly handle the TCP/IP backlog
+ * JAMES-691 - Search & Fix broken links on the new website
+ * JAMES-721 - MBoxMailRepository.remove(String key) causes ClassCastException
+ * JAMES-735 - Failure to correctly set mail.smtp.localhost leads to mail servers 
+               being listed on cbl.abuseat.org and mail being rejected by Spamhaus.
+ * JAMES-757 - MailAddress not check for valid syntax if new MailAddress(user, domain) 
+               is used
+ * JAMES-759 - sendmail.py use localhost to connect to local smtpserver. We should 
+               use 127.0.0.1
+ * JAMES-778 - exporting variables using build.sh on solaris breaks
+ * JAMES-781 - James will not start if there is directory with too many files 
+               and folders in the repostiory path
+ * JAMES-783 - python/sendmail.py is not added to the binary distribution package
+ * JAMES-830 - How can I connect Repository to Oracle DB server
+ * JAMES-853 - Server sends Mail without body while using gateway configuration  
+               for the RemoteDelivery Mailet 
+    
+Improvements Made
+ * JAMES-679 - Make sure our container use an expiration for cached dns data
+                    
+Tasks Completed
+ * JAMES-677 - Update license headers to follow the latest ASF requirements 
+               as of November the 1st
+ * JAMES-682 - Merge 2.3.0a1 to 2.3.0 final releases on JIRA
+ * JAMES-694 - Upgrade dnsjava to 2.0.3 when available
+ * JAMES-774 - Add documentation for the dns ttl issue
+            

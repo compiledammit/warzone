@@ -1,0 +1,10 @@
+classes/*
+target/*
+*.log
+log/*
+.idea/*
+.settings/*
+out/*
+*.iml
+*.ipr
+*.iws

@@ -53,5 +53,9 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.1"
 
         compile ':cache:1.0.0'
+        compile ":quartz:1.0-RC2"
+
+        runtime(':twitter-bootstrap:2.0.0.16') { excludes 'svn' }
+        runtime ':fields:1.3'
     }
 }

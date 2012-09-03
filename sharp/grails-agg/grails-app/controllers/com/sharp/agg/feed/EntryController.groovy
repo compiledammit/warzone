@@ -1,9 +1,8 @@
 package com.sharp.agg.feed
 
+import grails.plugins.springsecurity.Secured
 
-
-import com.sharp.CrudService
-
+@Secured("ROLE_ADMIN")
 class EntryController {
     EntryService entryService
 
@@ -19,18 +18,19 @@ class EntryController {
     }
 
     def create() {
-        return entryService.create(Entry, params)
+        def entry = entryService.create(Entry, params)
+        return [entryInstance: entry.instance]
     }
 
     def save() {
         def entryInstance = new Entry(params);
         def saved = entryService.save(entryInstance)
         if (saved) {
-           flash.message = message(code: 'default.created.message', args: [message(code: 'entry.label', default: 'Entry'), entryInstance.id])
-           redirect(action: "show", id: entryInstance.id)
+            flash.message = message(code: 'default.created.message', args: [message(code: 'entry.label', default: 'Entry'), entryInstance.id])
+            redirect(action: "show", id: entryInstance.id)
         }
         else {
-           render(view: "create", model: [entryInstance: entryInstance])
+            render(view: "create", model: [entryInstance: entryInstance])
         }
     }
 

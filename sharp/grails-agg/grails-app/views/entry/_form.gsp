@@ -15,7 +15,7 @@
 		<g:message code="entry.link.label" default="Link" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textArea name="link" cols="40" rows="5" maxlength="500" required="" value="${entryInstance?.link}"/>
+	<g:textArea name="link" cols="40" rows="5" maxlength="1000" required="" value="${entryInstance?.link}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: entryInstance, field: 'contents', 'error')} required">
@@ -34,19 +34,19 @@
 	<g:datePicker name="postedOn" precision="day"  value="${entryInstance?.postedOn}"  />
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: entryInstance, field: 'categories', 'error')} ">
+	<label for="categories">
+		<g:message code="entry.categories.label" default="Categories" />
+		
+	</label>
+	<g:select name="categories" from="${com.sharp.agg.feed.Category.list()}" multiple="multiple" optionKey="id" size="5" value="${entryInstance?.categories*.id}" class="many-to-many"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: entryInstance, field: 'feed', 'error')} required">
 	<label for="feed">
 		<g:message code="entry.feed.label" default="Feed" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select id="feed" name="feed.id" from="${com.sharp.agg.feed.Feed.list()}" optionKey="id" required="" value="${entryInstance?.feed?.id}" class="many-to-one"/>
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: entryInstance, field: 'tags', 'error')} ">
-	<label for="tags">
-		<g:message code="entry.tags.label" default="Tags" />
-		
-	</label>
-	<g:select name="tags" from="${com.sharp.agg.feed.Tag.list()}" multiple="multiple" optionKey="id" size="5" value="${entryInstance?.tags*.id}" class="many-to-many"/>
 </div>
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$/..">
+		<testFolder url="file://$MODULE_DIR$/../test/unit"/>
+		<testFolder url="file://$MODULE_DIR$/../test/integration"/>
+		<excludeFolder url="file://$MODULE_DIR$/../target/classes"/>
+	</contentEntry>
+	<lib name="lib" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/../lib"/>
+	</lib>
+	<lib name="lib" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/../lib"/>
+	</lib>
+	<lib name="lib" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/../lib"/>
+	</lib>
+	<lib name="Grails User Library (my-project)" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/../lib"/>
+	</lib>
+</component>

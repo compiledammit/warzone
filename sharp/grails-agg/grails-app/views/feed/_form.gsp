@@ -18,6 +18,14 @@
 	<g:textArea name="url" cols="40" rows="5" maxlength="1000" required="" value="${feedInstance?.url}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: feedInstance, field: 'lastChecked', 'error')} required">
+	<label for="lastChecked">
+		<g:message code="feed.lastChecked.label" default="Last Checked" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:datePicker name="lastChecked" precision="day"  value="${feedInstance?.lastChecked}"  />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: feedInstance, field: 'createdBy', 'error')} required">
 	<label for="createdBy">
 		<g:message code="feed.createdBy.label" default="Created By" />
