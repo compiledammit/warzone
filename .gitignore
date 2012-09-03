@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .project
 .classpath
 .idea/
@@ -19,3 +20,11 @@ target-eclipse/
 .settings
 out
 application.properties
+=======
+/.idea
+*.iml
+/target/
+/*.db
+*.log
+>>>>>>> 384c3e93b7161e154527adbe1f08642dbd5d0d26
+/robfletcher-twitter-bootstrap-scaffolding-384c3e9/.gitignore
