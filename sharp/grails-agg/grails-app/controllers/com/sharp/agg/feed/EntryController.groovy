@@ -12,6 +12,24 @@ class EntryController {
         redirect(action: "list", params: params)
     }
 
+    def go(String id) {
+        def entry = Entry.get(id)
+        //count it...
+        redirect(url: entry.link)
+    }
+
+    def byFeed(String id) {
+        def feed = Feed.get(id)
+        // load entries
+        def dat = true
+    }
+
+    def byCategory(String id) {
+        def cat = Category.get(id)
+        // load entries
+        def dis = false
+    }
+
     def list(Integer max) {
         def l = entryService.list(Entry, params)
         return [entryInstanceList: l.list, entryInstanceTotal: l.total]

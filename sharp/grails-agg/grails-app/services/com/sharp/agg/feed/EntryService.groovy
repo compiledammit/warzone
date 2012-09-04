@@ -9,7 +9,7 @@ class EntryService extends CrudService {
     Util util
 
     def listRecent(params) {
-        params.sort = 'dateCreated'
+        params.sort = 'postedOn'
         params.order = 'desc'
         return list(Entry, params);
     }

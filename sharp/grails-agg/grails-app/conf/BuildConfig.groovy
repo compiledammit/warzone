@@ -57,5 +57,8 @@ grails.project.dependency.resolution = {
 
         runtime(':twitter-bootstrap:2.0.0.16') { excludes 'svn' }
         runtime ':fields:1.3'
+
+        compile ":pretty-time:0.3"
+
     }
 }
