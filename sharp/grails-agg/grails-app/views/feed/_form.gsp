@@ -51,3 +51,11 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: feedInstance, field: 'isApproved', 'error')} ">
+	<label for="isApproved">
+		<g:message code="feed.isApproved.label" default="Is Approved" />
+		
+	</label>
+	<g:checkBox name="isApproved" value="${feedInstance?.isApproved}" />
+</div>
+

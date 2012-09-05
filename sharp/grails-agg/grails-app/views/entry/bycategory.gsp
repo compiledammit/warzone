@@ -12,10 +12,11 @@
     <section id="main" class="span9">
 
         <div class="well">
-            <h1>Recent Entries</h1>
+            <h1>Entries By Category</h1>
+            <h2>${category.category} (${entriesTotal} entries)</h2>
         </div>
 
-        <g:render template="/entry/entryListTemplate" model="[entries: entries, entriesTotal: entriesTotal]"/>
+        <g:render template="/entry/entryListTemplate" model="[entries: entries, id: params?.id, action: 'byCategory', entriesTotal: entriesTotal]"/>
 
     </section>
 

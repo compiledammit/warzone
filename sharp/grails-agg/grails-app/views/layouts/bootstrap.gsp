@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><g:layoutTitle default="${meta(name: 'app.name')}"/></title>
+    <title><g:layoutTitle default="gr('ails blog')[aggregator]"/></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -38,15 +38,12 @@
                 <span class="icon-bar"></span>
             </a>
 
-            <a class="brand" href="${createLink(uri: '/')}">Grails Twitter Bootstrap</a>
+            <a class="brand" href="${createLink(uri: '/')}">gr('ails blog')[aggregator]</a>
 
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li<%=request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : ''%>><a href="${createLink(uri: '/')}">Home</a>
-                    </li>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName }}">
-                        <li<%=c.logicalPropertyName == controllerName ? ' class="active"' : ''%>><g:link controller="${c.logicalPropertyName}">${c.naturalName}</g:link></li>
-                    </g:each>
+                    <li<%=request.forwardURI == "${createLink(uri: '/')}" ? ' class="active"' : ''%>><a href="${createLink(uri: '/')}">Home</a></li>
+                    <li<%=request.forwardURI == "${createLink(uri: '/admin')}" ? ' class="active"' : ''%>><a href="${createLink(uri: '/admin')}">Admin</a></li>
                 </ul>
             </div>
         </div>
@@ -54,6 +51,7 @@
 </nav>
 
 <div class="container-fluid">
+
     <g:layoutBody/>
 
     <hr>

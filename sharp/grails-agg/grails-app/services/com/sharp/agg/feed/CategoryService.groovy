@@ -7,4 +7,9 @@ class CategoryService extends CrudService {
         def byCategory = Category.findByCategory(category)
         return byCategory ?: null
     }
+
+    def findById(String id) {
+        def cat = Category.findById(id)
+        return cat
+    }
 }

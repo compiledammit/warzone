@@ -5,6 +5,7 @@ import grails.plugins.springsecurity.Secured
 @Secured("ROLE_ADMIN")
 class EntryController {
     EntryService entryService
+    FeedService feedService
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
@@ -12,22 +13,31 @@ class EntryController {
         redirect(action: "list", params: params)
     }
 
+    @Secured("IS_AUTHENTICATED_ANONYMOUSLY")
     def go(String id) {
-        def entry = Entry.get(id)
-        //count it...
+        def entry = Entry.findById(id)
+        def clientAddr = request.getRemoteAddr()
         redirect(url: entry.link)
     }
 
+    @Secured("IS_AUTHENTICATED_ANONYMOUSLY")
     def byFeed(String id) {
-        def feed = Feed.get(id)
-        // load entries
-        def dat = true
+        def feed = Feed.findById(id)
+        if (!feed) {
+            redirect(controller: "home", action: "index")
+            return
+        }
+        return entryService.findByFeed(feed, params)
     }
 
+    @Secured("IS_AUTHENTICATED_ANONYMOUSLY")
     def byCategory(String id) {
-        def cat = Category.get(id)
-        // load entries
-        def dis = false
+        def cat = Category.findById(id)
+        if (!cat) {
+            redirect(controller: "home", action: "index")
+            return
+        }
+        return entryService.findByCategory(cat, params)
     }
 
     def list(Integer max) {
@@ -53,7 +63,7 @@ class EntryController {
     }
 
     def show(Long id) {
-        def entryInstance = Entry.get(id)
+        def entryInstance = Entry.findById(id)
         if (!entryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'entry.label', default: 'Entry'), id])
             redirect(action: "list")
@@ -68,7 +78,7 @@ class EntryController {
 
     def update(Long id, Long version) {
 
-        def entryInstance = Entry.get(id)
+        def entryInstance = Entry.findById(id)
 
         if (!entryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'entry.label', default: 'Entry'), id])
@@ -98,7 +108,7 @@ class EntryController {
     }
 
     def delete(Long id) {
-        def entryInstance = Entry.get(id)
+        def entryInstance = Entry.findById(id)
         if (!entryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'entry.label', default: 'Entry'), id])
             redirect(action: "list")

@@ -20,7 +20,7 @@ class CrudService {
     }
 
     def delete(classRef, Long id) {
-        def instance = classRef.get(id)
+        def instance = classRef.findById(id)
         return instance.delete(flush: true)
     }
 }

@@ -149,7 +149,7 @@ class FeedControllerTests {
         controller.delete()
 
         assert Feed.count() == 0
-        assert Feed.get(feed.id) == null
+        assert Feed.findById(feed.id) == null
         assert response.redirectedUrl == '/feed/list'
     }
 }

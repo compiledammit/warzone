@@ -77,6 +77,8 @@ log4j = {
     //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
     //}
 
+    warn 'grails.app.*'
+
     debug 'grails.app.jobs'
 
     error  'org.codehaus.groovy.grails.web.servlet',        // controllers

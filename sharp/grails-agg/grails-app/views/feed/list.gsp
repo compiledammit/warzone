@@ -54,7 +54,7 @@
 						
 							<g:sortableColumn property="dateCreated" title="${message(code: 'feed.dateCreated.label', default: 'Date Created')}" />
 						
-							<g:sortableColumn property="lastUpdated" title="${message(code: 'feed.lastUpdated.label', default: 'Last Updated')}" />
+							<g:sortableColumn property="isApproved" title="${message(code: 'feed.isApproved.label', default: 'Is Approved')}" />
 						
 							<th></th>
 						</tr>
@@ -73,7 +73,7 @@
 						
 							<td><g:formatDate date="${feedInstance.dateCreated}" /></td>
 						
-							<td><g:formatDate date="${feedInstance.lastUpdated}" /></td>
+							<td><g:formatBoolean boolean="${feedInstance.isApproved}" /></td>
 						
 							<td class="link">
 								<g:link action="show" id="${feedInstance.id}" class="btn btn-small">Show &raquo;</g:link>

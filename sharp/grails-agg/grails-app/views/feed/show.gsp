@@ -86,6 +86,13 @@
 						
 					</g:if>
 				
+					<g:if test="${feedInstance?.isApproved}">
+						<dt><g:message code="feed.isApproved.label" default="Is Approved" /></dt>
+						
+							<dd><g:formatBoolean boolean="${feedInstance?.isApproved}" /></dd>
+						
+					</g:if>
+				
 					<g:if test="${feedInstance?.lastUpdated}">
 						<dt><g:message code="feed.lastUpdated.label" default="Last Updated" /></dt>
 						

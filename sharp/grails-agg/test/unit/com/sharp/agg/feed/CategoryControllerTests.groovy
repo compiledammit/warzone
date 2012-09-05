@@ -149,7 +149,7 @@ class CategoryControllerTests {
         controller.delete()
 
         assert Category.count() == 0
-        assert Category.get(category.id) == null
+        assert Category.findById(category.id) == null
         assert response.redirectedUrl == '/category/list'
     }
 }

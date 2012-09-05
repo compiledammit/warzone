@@ -7,7 +7,7 @@ import grails.plugins.springsecurity.Secured
 
 @Secured("ROLE_ADMIN")
 class FeedController {
-    CrudService crudService
+    FeedService feedService
     EntryService entryService
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -16,25 +16,19 @@ class FeedController {
         redirect(action: "list", params: params)
     }
 
-    /* all used for public facing list */
-    @Secured("IS_AUTHENTICATED_ANONYMOUSLY")
-    def all(){
-        return list()
-    }
-
     def list(Integer max) {
-        def l = crudService.list(Feed, params)
+        def l = feedService.listAll(params)
         return [feedInstanceList: l.list, feedInstanceTotal: l.total]
     }
 
     def create() {
-        def feed = crudService.create(Feed, params)
+        def feed = feedService.create(Feed, params)
         return [feedInstance: feed.instance]
     }
 
     def save() {
         def feedInstance = new Feed(params);
-        def saved = crudService.save(feedInstance)
+        def saved = feedService.save(feedInstance)
         if (saved) {
             entryService.getEntries(feedInstance)
             flash.message = message(code: 'default.created.message', args: [message(code: 'feed.label', default: 'Feed'), feedInstance.id])
@@ -46,7 +40,7 @@ class FeedController {
     }
 
     def show(Long id) {
-        def feedInstance = Feed.get(id)
+        def feedInstance = feedService.get(id)
         if (!feedInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'feed.label', default: 'Feed'), id])
             redirect(action: "list")
@@ -61,7 +55,7 @@ class FeedController {
 
     def update(Long id, Long version) {
 
-        def feedInstance = Feed.get(id)
+        def feedInstance = feedService.get(id)
 
         if (!feedInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'feed.label', default: 'Feed'), id])
@@ -78,7 +72,7 @@ class FeedController {
         }
 
         feedInstance.properties = params
-        def saved = crudService.update(feedInstance)
+        def saved = feedService.update(feedInstance)
 
         if (!feedInstance.hasErrors()) {
 
@@ -94,13 +88,13 @@ class FeedController {
     }
 
     def delete(Long id) {
-        def feedInstance = Feed.get(id)
+        def feedInstance = feedService.get(id)
         if (!feedInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'feed.label', default: 'Feed'), id])
             redirect(action: "list")
             return
         }
-        def deleted = crudService.delete(Feed, id)
+        def deleted = feedService.delete(Feed, id)
         if (deleted) {
             flash.message = message(code: 'default.deleted.message', args: [message(code: 'feed.label', default: 'Feed'), id])
             redirect(action: "list")

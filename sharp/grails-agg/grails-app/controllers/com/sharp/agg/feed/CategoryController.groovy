@@ -36,7 +36,7 @@ class CategoryController {
     }
 
     def show(Long id) {
-        def categoryInstance = Category.get(id)
+        def categoryInstance = Category.findById(id)
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
             redirect(action: "list")
@@ -51,7 +51,7 @@ class CategoryController {
 
     def update(Long id, Long version) {
 
-        def categoryInstance = Category.get(id)
+        def categoryInstance = Category.findById(id)
 
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
@@ -81,7 +81,7 @@ class CategoryController {
     }
 
     def delete(Long id) {
-        def categoryInstance = Category.get(id)
+        def categoryInstance = Category.findById(id)
         if (!categoryInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'category.label', default: 'Category'), id])
             redirect(action: "list")

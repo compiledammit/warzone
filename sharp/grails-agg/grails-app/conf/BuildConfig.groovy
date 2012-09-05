@@ -60,5 +60,7 @@ grails.project.dependency.resolution = {
 
         compile ":pretty-time:0.3"
 
+        compile ":hibernate-filter:0.3.2"
+
     }
 }

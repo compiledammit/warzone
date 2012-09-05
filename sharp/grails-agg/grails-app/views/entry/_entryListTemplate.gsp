@@ -25,5 +25,5 @@
 </g:each>
 
 <div class="pagination">
-    <bootstrap:paginate action="index" total="${entriesTotal}"/>
+    <bootstrap:paginate action="${action ?: 'index'}" id="${id ?: ''}" total="${entriesTotal}"/>
 </div>

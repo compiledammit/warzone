@@ -147,7 +147,7 @@ class ${className}ControllerTests {
         controller.delete()
 
         assert ${className}.count() == 0
-        assert ${className}.get(${propertyName}.id) == null
+        assert ${className}.findById(${propertyName}.id) == null
         assert response.redirectedUrl == '/${propertyName}/list'
     }
 }

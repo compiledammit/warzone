@@ -149,7 +149,7 @@ class EntryControllerTests {
         controller.delete()
 
         assert Entry.count() == 0
-        assert Entry.get(entry.id) == null
+        assert Entry.findById(entry.id) == null
         assert response.redirectedUrl == '/entry/list'
     }
 }

@@ -2,16 +2,36 @@ package com.sharp.agg.feed
 
 import com.sharp.CrudService
 import com.sharp.agg.util.Util
+import grails.gorm.PagedResultList
 
 class EntryService extends CrudService {
 
     CategoryService categoryService
+    FeedService feedService
     Util util
 
     def listRecent(params) {
         params.sort = 'postedOn'
         params.order = 'desc'
         return list(Entry, params);
+    }
+
+    def findByFeed(feed, params){
+        params.max = Math.min(params.max as Integer ?: 10, 100)
+        def entries = Entry.findAllByFeed(feed, params)
+        def entryCount = Entry.countByFeed(feed);
+        return [entries: entries, entriesTotal: entryCount, feed: feed]
+    }
+
+    def findByCategory(category, params){
+        params.max = Math.min(params.max as Integer ?: 10, 100)
+        def criteria = Entry.createCriteria()
+        def entries = criteria.list(params) {
+            categories  {
+                inList('id', [category.id])
+            }
+        }
+        return [entries: entries, entriesTotal: entries.getTotalCount(), category: category]
     }
 
     def getEntries(Feed feed) {
