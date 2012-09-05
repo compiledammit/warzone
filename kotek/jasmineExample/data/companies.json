@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 1,
+        "company" : "3m Co",
+        "price" : 71.72,
+        "change" : 0.02,
+        "pctChange" : 0.03,
+        "lastChange" : "9/1 12:00am",
+        "industry" : "Manufacturing"
+    },
+    {
+        "id" : 2,
+        "company" : "Alcoa Inc",
+        "price" : 29.01,
+        "change" : 0.42,
+        "pctChange" : 1.47,
+        "lastChange" : "9/1 12:00am",
+        "industry" : "Manufacturing"
+    },
+    {
+        "id" : 3,
+        "company" : "Altria Group Inc",
+        "price" : 83.81,
+        "change" : 0.28,
+        "pctChange" : 0.34,
+        "lastChange" : "9/1 12:00am",
+        "industry" : "Manufacturing"
+    },
+    {
+        "id" : 4,
+        "company" : "American Express Company",
+        "price" : 52.55,
+        "change" : 0.01,
+        "pctChange" : 0.02,
+        "lastChange" : "9/1 12:00am",
+        "industry" : "Finance"
+    },
+    {
+        "id" : 5,
+        "company" : "American International Group, Inc.",
+        "price" : 64.13,
+        "change" : 0.31,
+        "pctChange" : 0.49,
+        "lastChange" : "9/1 12:00am",
+        "industry" : "Services"
+    }
+]
