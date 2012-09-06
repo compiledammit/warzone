@@ -1,19 +1,17 @@
-Ext.define( 'JasmineExample.controller.MainController',
-  extend: 'Deft.mvc.ViewController'
+Ext.define( "JasmineExample.controller.MainController",
+  extend: "Deft.mvc.ViewController"
 
-  #control:
-    #grid : true
-    #submitButton: 'panel > button[text="Submit"]'
-    #view:
-    #  show: 'related view is set automatically even if no listeners are attached.'
-
-  #config:
-    #valueToCreateSetterFor_EspeciallyInjections: null
+  control:
+    panel2: {}
 
   init: ->
-    #all accessors will have been created
-    #all event listeners will have been added
-    console.log( 'Got here!' )
-    @callParent(arguments)
+    @callParent( arguments )
 
+
+  ###*
+  * Update the title for one of the tab panels
+  * @param title The new title for the panel.
+  ###
+  updatePanelTitle: ( title ) ->
+    @getPanel2().title = title
 )
