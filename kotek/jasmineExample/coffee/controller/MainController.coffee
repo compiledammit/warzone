@@ -5,12 +5,13 @@ Ext.define( "JasmineExample.controller.MainController",
     panel2: {}
 
   init: ->
-    #all accessors will have been created
-    #all event listeners will have been added
-    console.log( "Got here!" )
-    @callParent(arguments)
+    @callParent( arguments )
 
 
+  ###*
+  * Update the title for one of the tab panels
+  * @param title The new title for the panel.
+  ###
   updatePanelTitle: ( title ) ->
     @getPanel2().title = title
 )

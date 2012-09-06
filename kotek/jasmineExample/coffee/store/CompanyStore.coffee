@@ -19,8 +19,13 @@ Ext.define( "JasmineExample.store.CompanyStore",
           cfg )
       ]
     )
-    
-    
+
+
+  ###*
+  * Filter the Companies using the specified industry value.
+  * @param value The industry to filter on.
+  ###
   filterIndustry: ( value ) ->
     @filter( "industry", value )
+
 )
