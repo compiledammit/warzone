@@ -23,13 +23,34 @@ describe("The Main Tab Panel...", function() {
     return viewController = null;
   });
   return describe("During a successful startup...", function() {
-    return it("has created the main tab panel view and view controller", function() {
+    it("has created the main tab panel view and view controller", function() {
       expect(view).toBeDefined();
       expect(view.rendered).toBeTruthy();
       expect(view instanceof JasmineExample.view.MainTabPanel).toBeTruthy();
       expect(viewController).toBeDefined();
       expect(viewController instanceof JasmineExample.controller.MainController).toBeTruthy();
       return expect(viewController.getView() === view).toBeTruthy();
+    });
+    it("allows panel title to be changed", function() {
+      expect(viewController.getPanel2().title).toEqual("Panel 2");
+      viewController.updatePanelTitle("My New Title");
+      return expect(viewController.getPanel2().title).toEqual("My New Title");
+    });
+    return it("allows store to be filtered", function() {
+      var store;
+      store = Deft.ioc.Injector.resolve("companyStore");
+      waitsFor((function() {
+        return store.getCount() > 0;
+      }), "Store data never loaded.", 2000);
+      return runs(function() {
+        expect(store.filters.length).toBe(0);
+        store.filterIndustry("Manufacturing");
+        expect(store.filters.length).toBe(1);
+        store.data.each(function(thisCompany) {
+          return expect(thisCompany.get("industry")).toEqual("Manufacturing");
+        });
+        return store.clearFilter();
+      });
     });
   });
 });

@@ -4,25 +4,25 @@ Ext.define("JasmineExample.view.MainTabPanel", {
   extend: "Ext.tab.Panel",
   alias: "widget.jasmineExample-view-mainTabPanel",
   requires: ["JasmineExample.view.TestPanel1"],
-  controller: 'JasmineExample.controller.MainController',
+  controller: "JasmineExample.controller.MainController",
   cls: "titletabs",
   padding: "15, 0, 0, 0",
   activeTab: 0,
   autoScroll: false,
-  layout: 'anchor',
+  layout: "anchor",
   initComponent: function() {
     Ext.applyIf(this, {
       items: [
         {
-          xtype: 'jasmineExample-view-testpanel1',
-          itemId: 'panel1',
-          title: 'Panel 1',
-          anchor: '100% 100%'
+          xtype: "jasmineExample-view-testpanel1",
+          itemId: "panel1",
+          title: "Panel 1",
+          anchor: "100% 100%"
         }, {
-          xtype: 'panel',
-          itemId: 'panel2',
-          title: 'Panel 2',
-          anchor: '100% 100%'
+          xtype: "panel",
+          itemId: "panel2",
+          title: "Panel 2",
+          anchor: "100% 100%"
         }
       ]
     });
