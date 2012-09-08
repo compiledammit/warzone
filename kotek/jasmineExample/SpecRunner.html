@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>ExtJS, DeftJS and Jasmine Example Spec Runner</title>
+
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="lib/jasmine/jasmine.css">
+
+    <style type="text/css">
+        /* Hide any ExtJS loading masks during test runs */
+        .x-css-shadow, .x-mask, .x-mask-msg, .x-layer, .x-mask-msg-default {
+            visibility: hidden;
+        }
+
+        /* Custom Spec Runner output style */
+        h1 {
+            border-style: solid;
+            border-width: medium;
+            border-color: #5E7D00;
+            background-color: #FFF6CC;
+            font-family: sans-serif;
+            color: #5E7D00;
+            padding: 10px;
+            font-size: larger;
+        }
+
+        body {
+            padding-bottom: 50px;
+        }
+    </style>
+
+    <script type="text/javascript" src="lib/jasmine/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine/jasmine-html.js"></script>
+
+    <!-- Source files and libraries... -->
+    <script type="text/javascript" charset="utf-8" src="http://cdn.sencha.io/ext-4.1.1-gpl/ext-all-dev.js"></script>
+    <script type="text/javascript" src="lib/deftjs/deft-debug.js"></script>
+    <script type="text/javascript" src="app/app_jasmine.js"></script>
+
+    <!-- Spec files to execute... -->
+    <script type="text/javascript" src="spec/js/BasicTest.js"></script>
+    <script type="text/javascript" src="spec/js/MainTabPanelTest.js"></script>
+
+
+    <!-- Run from file system warning and Jasmine reporting setup. -->
+    <script type="text/javascript">
+    isFile = /^(file).*/.test( document.URL );
+    if( isFile )
+    {
+        document.write(
+            "<h1>" +
+            "Running Jasmine tests from a file system URL will probably fail. Browser security settings will prevent loading files via AJAX.<p/>" +
+            "Deploy the files to a web server and run the tests from there. The build.xml has a deployall task that can do this for you.<p/>" +
+            "</h1>"
+        );
+    }
+
+    var jasmineEnv = jasmine.getEnv();
+    jasmineEnv.updateInterval = 1000;
+
+    var htmlReporter = new jasmine.HtmlReporter();
+
+    jasmineEnv.addReporter(htmlReporter);
+
+    jasmineEnv.specFilter = function( spec ) {
+        return htmlReporter.specFilter( spec );
+    };
+
+    function execJasmine() {
+        jasmineEnv.execute();
+    }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>ExtJS, DeftJS and Jasmine Example Specs</h1>
+</body>
+</html>
