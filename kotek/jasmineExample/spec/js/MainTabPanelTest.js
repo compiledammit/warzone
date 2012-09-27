@@ -36,7 +36,7 @@ describe("The Main Tab Panel...", function() {
       viewController.updatePanelTitle("My New Title");
       return expect(viewController.getPanel2().title).toEqual("My New Title");
     });
-    return it("allows store to be filtered", function() {
+    it("allows store to be filtered", function() {
       var store;
       store = Deft.ioc.Injector.resolve("companyStore");
       waitsFor((function() {
@@ -50,6 +50,80 @@ describe("The Main Tab Panel...", function() {
           return expect(thisCompany.get("industry")).toEqual("Manufacturing");
         });
         return store.clearFilter();
+      });
+    });
+    it("should update the current company upon selection", function() {
+      var store;
+      store = Deft.ioc.Injector.resolve("companyStore");
+      waitsFor((function() {
+        return store.getCount() > 0;
+      }), "Store data never loaded.", 2000);
+      return runs(function() {
+        var firstCompany, grid;
+        grid = viewController.getCompanyGridPanel();
+        spyOn(viewController, 'setCurrentCompany');
+        firstCompany = grid.store.getAt(0);
+        grid.fireEvent("selectionchange", {}, [firstCompany]);
+        return expect(viewController.setCurrentCompany).toHaveBeenCalled();
+      });
+    });
+    it("should pass the selected company when setting the current company", function() {
+      var store;
+      store = Deft.ioc.Injector.resolve("companyStore");
+      waitsFor((function() {
+        return store.getCount() > 0;
+      }), "Store data never loaded.", 2000);
+      return runs(function() {
+        var firstCompany, grid;
+        grid = viewController.getCompanyGridPanel();
+        spyOn(viewController, 'setCurrentCompany');
+        firstCompany = grid.store.getAt(0);
+        grid.fireEvent("selectionchange", {}, [firstCompany], 0);
+        return expect(viewController.setCurrentCompany).toHaveBeenCalledWith(firstCompany);
+      });
+    });
+    it("should store the selected company as the current company", function() {
+      var store;
+      store = Deft.ioc.Injector.resolve("companyStore");
+      waitsFor((function() {
+        return store.getCount() > 0;
+      }), "Store data never loaded.", 2000);
+      return runs(function() {
+        var firstCompany, grid;
+        grid = viewController.getCompanyGridPanel();
+        spyOn(viewController, 'setCurrentCompany').andCallThrough();
+        firstCompany = grid.store.getAt(0);
+        grid.fireEvent("selectionchange", {}, [firstCompany], 0);
+        return expect(viewController.getCurrentCompany()).toBe(firstCompany);
+      });
+    });
+    it("should allow getting the current company to be faked", function() {
+      var grid;
+      grid = viewController.getCompanyGridPanel();
+      spyOn(viewController, 'getCurrentCompany').andCallFake(function() {
+        return "Fake Company";
+      });
+      return expect(viewController.getCurrentCompany()).toBe("Fake Company");
+    });
+    return it("should allow setting the current company to be intercepted and altered", function() {
+      var store;
+      store = Deft.ioc.Injector.resolve("companyStore");
+      waitsFor((function() {
+        return store.getCount() > 0;
+      }), "Store data never loaded.", 2000);
+      return runs(function() {
+        var changedPrice, firstCompany, grid;
+        grid = viewController.getCompanyGridPanel();
+        changedPrice = 12345.67;
+        spyOn(viewController, 'setCurrentCompany').andCallFake(function(company) {
+          var originalFunction;
+          originalFunction = this.setCurrentCompany.originalValue;
+          company.set("price", changedPrice);
+          return originalFunction.call(this, company);
+        });
+        firstCompany = grid.store.getAt(0);
+        grid.fireEvent("selectionchange", {}, [firstCompany], 0);
+        return expect(viewController.getCurrentCompany().get("price")).toBe(changedPrice);
       });
     });
   });

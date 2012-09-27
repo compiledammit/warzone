@@ -3,13 +3,30 @@
 Ext.define("JasmineExample.controller.MainController", {
   extend: "Deft.mvc.ViewController",
   control: {
+    companyGridPanel: {
+      selectionchange: "onCompanySelected"
+    },
     panel2: {}
   },
+  config: {
+    currentCompany: null
+  },
   init: function() {
-    console.log("Got here!");
     return this.callParent(arguments);
   },
+  /**
+  * Update the title for one of the tab panels
+  * @param title The new title for the panel.
+  */
+
   updatePanelTitle: function(title) {
     return this.getPanel2().title = title;
+  },
+  onCompanySelected: function(selectionModel, model, index) {
+    Ext.log({
+      dump: arguments,
+      stack: false
+    }, "onCompanySelected");
+    return this.setCurrentCompany(model[0]);
   }
 });

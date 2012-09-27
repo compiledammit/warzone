@@ -15,8 +15,8 @@ Ext.define("JasmineExample.view.MainTabPanel", {
       items: [
         {
           xtype: "jasmineExample-view-testpanel1",
-          itemId: "panel1",
-          title: "Panel 1",
+          itemId: "testPanel",
+          title: "Companies",
           anchor: "100% 100%"
         }, {
           xtype: "panel",

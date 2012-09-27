@@ -2,7 +2,13 @@ Ext.define( "JasmineExample.controller.MainController",
   extend: "Deft.mvc.ViewController"
 
   control:
+    companyGridPanel:
+      selectionchange: "onCompanySelected"
     panel2: {}
+
+
+  config:
+    currentCompany: null
 
   init: ->
     @callParent( arguments )
@@ -14,4 +20,9 @@ Ext.define( "JasmineExample.controller.MainController",
   ###
   updatePanelTitle: ( title ) ->
     @getPanel2().title = title
+
+
+  onCompanySelected: ( selectionModel, model, index ) ->
+    @setCurrentCompany( model[ 0 ] )
+
 )

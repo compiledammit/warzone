@@ -70,3 +70,73 @@ describe "The Main Tab Panel...", ->
       )
 
 
+    it "should update the current company upon selection", ->
+      store = Deft.ioc.Injector.resolve( "companyStore" )
+      waitsFor( ( -> store.getCount() > 0 ), "Store data never loaded.", 2000 )
+
+      runs( ->
+        grid = viewController.getCompanyGridPanel()
+        spyOn( viewController, 'setCurrentCompany' )
+
+        firstCompany = grid.store.getAt( 0 )
+        grid.fireEvent( "selectionchange", {}, [ firstCompany ] )
+        expect( viewController.setCurrentCompany ).toHaveBeenCalled()
+      )
+
+
+    it "should pass the selected company when setting the current company", ->
+      store = Deft.ioc.Injector.resolve( "companyStore" )
+      waitsFor( ( -> store.getCount() > 0 ), "Store data never loaded.", 2000 )
+
+      runs( ->
+        grid = viewController.getCompanyGridPanel()
+        spyOn( viewController, 'setCurrentCompany')
+
+        firstCompany = grid.store.getAt( 0 )
+        grid.fireEvent( "selectionchange", {}, [ firstCompany ], 0 )
+        expect( viewController.setCurrentCompany ).toHaveBeenCalledWith( firstCompany )
+      )
+
+
+    it "should store the selected company as the current company", ->
+      store = Deft.ioc.Injector.resolve( "companyStore" )
+      waitsFor( ( -> store.getCount() > 0 ), "Store data never loaded.", 2000 )
+
+      runs( ->
+        grid = viewController.getCompanyGridPanel()
+        spyOn( viewController, 'setCurrentCompany').andCallThrough()
+
+        firstCompany = grid.store.getAt( 0 )
+        grid.fireEvent( "selectionchange", {}, [ firstCompany ], 0 )
+        expect( viewController.getCurrentCompany() ).toBe( firstCompany )
+      )
+
+
+    it "should allow getting the current company to be faked", ->
+      grid = viewController.getCompanyGridPanel()
+      spyOn( viewController, 'getCurrentCompany').andCallFake( ->
+        return "Fake Company"
+      )
+      expect( viewController.getCurrentCompany() ).toBe( "Fake Company" )
+
+
+    it "should allow setting the current company to be intercepted and altered", ->
+      store = Deft.ioc.Injector.resolve( "companyStore" )
+      waitsFor( ( -> store.getCount() > 0 ), "Store data never loaded.", 2000 )
+
+      runs( ->
+        grid = viewController.getCompanyGridPanel()
+        changedPrice = 12345.67
+
+        spyOn( viewController, 'setCurrentCompany').andCallFake( ( company ) ->
+          originalFunction = @setCurrentCompany.originalValue
+          company.set( "price", changedPrice )
+          originalFunction.call( @, company )
+        )
+
+        firstCompany = grid.store.getAt( 0 )
+        grid.fireEvent( "selectionchange", {}, [ firstCompany ], 0 )
+        expect( viewController.getCurrentCompany().get( "price" ) ).toBe( changedPrice )
+      )
+
+

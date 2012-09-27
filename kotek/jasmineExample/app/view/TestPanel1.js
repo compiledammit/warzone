@@ -11,13 +11,13 @@ Ext.define("JasmineExample.view.TestPanel1", {
       items: [
         {
           xtype: "container",
-          id: "gridContainer",
+          itemId: "gridContainer",
           layout: "anchor",
           anchor: "100% 100%",
           items: [
             {
               xtype: "gridpanel",
-              id: "gridPanel",
+              itemId: "companyGridPanel",
               store: this.companyStore,
               columnLines: true,
               anchor: "100% 100%",
